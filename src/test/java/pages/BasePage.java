@@ -1,31 +1,39 @@
 package pages;
 
 import com.github.javafaker.Faker;
-import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Properties;
 
 public class BasePage {
-
-    protected WebDriver driver;
+    public static Logger log1 = Logger.getLogger(BasePage.class.getName());
+    public WebDriver driver;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver,this);
+        DOMConfigurator.configure("log4j.xml");
     }
 
 
     public static void accept(WebDriver driver){
         Alert alert =   driver.switchTo().alert();
         System.out.println("Title" + alert.getText());
+        log1.info("switch to alert");
         alert.accept();
     }
 
@@ -96,15 +104,6 @@ public class BasePage {
         sel.selectByVisibleText(value);
     }
 
-    public static void takeScreenshot(WebDriver driver){
-        try {
-            TakesScreenshot srcShot = (TakesScreenshot) driver;
-            File screenshot = srcShot.getScreenshotAs(OutputType.FILE);
-            File output = new File("./screenshot.png");
-            FileUtils.copyFile(screenshot, output);
-        }catch (Exception e) {}
-    }
-
     public static String getvalue(String key){
         String value = null;
         try {
@@ -118,6 +117,7 @@ public class BasePage {
         }
         return value;
     }
+
 
     public static void sleep(int seconds){
         try {
@@ -136,6 +136,29 @@ public class BasePage {
         Faker faker =   new Faker(new Locale("en-IND"));
         String city = faker.address().city();
         return city;
+    }
+
+    public static Object[][] Excelread(String Sheetname) throws IOException {
+        String Excelpath = BasePage.getvalue("Excelpath");
+        File excelFile = new File(Excelpath);
+        FileInputStream fis = new FileInputStream(excelFile);
+        XSSFWorkbook workbook = new XSSFWorkbook(fis);
+        XSSFSheet sheet = workbook.getSheet(Sheetname);
+        int noOfRows = sheet.getPhysicalNumberOfRows();
+        int noOfColumns = sheet.getRow(0).getLastCellNum();
+        String[][] data = new String[noOfRows - 1][noOfColumns];
+        for (int i = 0; i < noOfRows - 1; i++) {
+            for (int j = 0; j < noOfColumns; j++) {
+                DataFormatter df = new DataFormatter();
+                data[i][j] = df.formatCellValue(sheet.getRow(i + 1).getCell(j));
+            }
+        }
+        workbook.close();
+        fis.close();
+        for (String[] dataArr : data) {
+            log1.info(Arrays.toString(dataArr));
+        }
+        return data;
     }
 
 

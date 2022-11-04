@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,6 +10,7 @@ public class HomePage  extends BasePage{
 
     public HomePage(WebDriver driver) {
         super(driver);
+
     }
 
     @FindBy(xpath = "//div[text()='NEW CARS']")
@@ -31,7 +31,7 @@ public class HomePage  extends BasePage{
     @FindBy(xpath = "//div[text()='View More Brands']")
     protected WebElement viewMore;
 
-    @FindBy(xpath = "(//input[@type='text'])[2]")
+    @FindBy(xpath = "//input[@placeholder='City, eg: Mumbai']")
     protected WebElement searchTextField;
 
     @FindBy(xpath = "//span[text()='New']")
@@ -46,6 +46,13 @@ public class HomePage  extends BasePage{
 
 
     public void verifyMenus() {
+        log1.info("Hello");
+        log1.debug("Sample debug message");
+        log1.info("Sample info message");
+        log1.warn("Sample warn message");
+        log1.error("Sample error message");
+        log1.fatal("Sample fatal message");
+
         assertTitle(nameCars,"NEW CARS");
         assertTitle(usedCars,"USED CARS");
         assertTitle(reviewNews,"REVIEWS & NEWS");
