@@ -1,14 +1,13 @@
 package testcases;
 
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.UsedCarPage;
+import org.testng.annotations.*;
+import pages.*;
+import resources.Retry;
 
 
 public class TC_HM_003_parameterize extends BaseTest {
 
-    @Test(dataProvider = "getData")
+    @Test(dataProvider = "getData",retryAnalyzer = Retry.class)
     public void TC_HM_003_parameterizer(String city) {
         //String city = BasePage.generateCity();
         HomePage hp = new HomePage(driver);

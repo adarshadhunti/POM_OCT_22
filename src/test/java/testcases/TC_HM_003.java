@@ -1,16 +1,13 @@
 package testcases;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
-import pages.BasePage;
-import pages.HomePage;
-import pages.UsedCarPage;
+import pages.*;
+import resources.Retry;
 
 
 public class TC_HM_003 extends BaseTest {
 
-    @Test
+    @Test(retryAnalyzer = Retry.class)
     public void TC_HM_003() {
         String city = BasePage.generateCity();
         HomePage hp = new HomePage(driver);

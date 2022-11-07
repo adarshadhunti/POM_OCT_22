@@ -22,7 +22,7 @@ public class NewCarPage extends BasePage{
 
 
     public void carTitles(){
-        viewMore.click();
+        click(driver,viewMore);
         System.out.println("Total Car Brands: "+ carTitles.size());
         for(WebElement title : carTitles){
             System.out.println(title.getText());

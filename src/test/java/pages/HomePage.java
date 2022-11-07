@@ -46,13 +46,6 @@ public class HomePage  extends BasePage{
 
 
     public void verifyMenus() {
-        log1.info("Hello");
-        log1.debug("Sample debug message");
-        log1.info("Sample info message");
-        log1.warn("Sample warn message");
-        log1.error("Sample error message");
-        log1.fatal("Sample fatal message");
-
         assertTitle(nameCars,"NEW CARS");
         assertTitle(usedCars,"USED CARS");
         assertTitle(reviewNews,"REVIEWS & NEWS");
@@ -60,11 +53,11 @@ public class HomePage  extends BasePage{
 
     public void navigateToSearch() {
         assertTitle(searchButton,"Search");
-        searchButton.click();
+        click(driver,searchButton);
     }
 
     public void carTitles(){
-        viewMore.click();
+        click(driver,viewMore);
         System.out.println("Total Car Titles: "+ carTitles.size());
         for(WebElement title : carTitles){
             System.out.println(title.getText());
@@ -73,7 +66,7 @@ public class HomePage  extends BasePage{
 
     public void searchBasedOnCity(String city){
         searchTextField.sendKeys(city);
-        sleep(2000);
+        waitForvisibilty(driver,searchButton);
         click(driver,searchButton);
     }
 
@@ -82,6 +75,4 @@ public class HomePage  extends BasePage{
         click(driver,usedButton);
 
     }
-
-
 }

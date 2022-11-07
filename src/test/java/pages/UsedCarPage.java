@@ -35,7 +35,7 @@ public class UsedCarPage extends BasePage {
 
     public void verifynoofbrands() {
         int actualnoofcarbrands = noofcarbrands.size();
-        int expectednoofcarbrands = 52;
+        int expectednoofcarbrands = 46;
         Assert.assertEquals(actualnoofcarbrands, expectednoofcarbrands, "Not matching");
     }
     public void verifynoofbrands(String expectednoofcarbrands) {

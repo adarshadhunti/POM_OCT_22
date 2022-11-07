@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="resources.Listeners"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name = "Parallel Tests1" parallel = "methods" thread-count = "2">
+        <!--
+    parallel="classes">-->
+        <classes>
+            <class name="testcases.TC_HM_001"/>
+            <class name="testcases.TC_HM_002"/>
+        </classes>
+    </test>
+</suite>

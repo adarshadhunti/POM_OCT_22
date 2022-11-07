@@ -9,12 +9,16 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.Locale;
 import java.util.Properties;
@@ -22,6 +26,7 @@ import java.util.Properties;
 public class BasePage {
     public static Logger log1 = Logger.getLogger(BasePage.class.getName());
     public WebDriver driver;
+    public static int timeout=300;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -50,56 +55,70 @@ public class BasePage {
         alert.accept();
     }
 
-    public static void waitForele(long timeout){
+    public static void waitForele(){
         try {
+            long timeout=3000;
             Thread.sleep(timeout);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
+    public static void waitForvisibilty(WebDriver driver,WebElement element){
+        log1.info("Waiting for the element"+ element.getText());
+        WebDriverWait wait=new WebDriverWait(driver,timeout);
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
 
 
     public static void mouseHover(WebDriver driver, WebElement elementsByName){
+        waitForvisibilty(driver,elementsByName);
         Actions actions = new Actions(driver);
         actions.moveToElement(elementsByName).build().perform();
     }
 
-    public static void click(WebDriver driver, WebElement elementsByName){
+    public static void click(WebDriver driver, WebElement element){
+        waitForvisibilty(driver,element);
         Actions actions = new Actions(driver);
-        actions.click(elementsByName).build().perform();
+        actions.click(element).build().perform();
     }
 
     public static void rightClick(WebDriver driver, WebElement element){
         Actions actions = new Actions(driver);
+        waitForvisibilty(driver,element);
         actions.contextClick(element).build().perform();
     }
 
     public static void dragAndDrop(WebDriver driver, WebElement element1, WebElement element2){
         Actions action = new Actions(driver);
+        waitForvisibilty(driver,element1);
+        waitForvisibilty(driver,element2);
         action.dragAndDrop(element1, element2).build().perform();
 
     }
 
     public static void scrollIntoView(WebDriver driver, WebElement element1){
         JavascriptExecutor js = (JavascriptExecutor) driver;
-
         js.executeScript("arguments[0].scrollIntoView();",element1);
+        waitForvisibilty(driver,element1);
         element1.click();
 
     }
 
-    public static void selectBYindex( WebElement element, int index){
+    public static void selectBYindex( WebDriver driver,WebElement element, int index){
+        waitForvisibilty(driver,element);
         Select sel = new Select(element);
-        sel.selectByIndex(index);
+         sel.selectByIndex(index);
     }
 
 
-    public static void selectBYValue (WebElement element, String value){
+    public static void selectBYValue (WebDriver driver,WebElement element, String value){
+        waitForvisibilty(driver,element);
         Select sel = new Select(element);
         sel.selectByValue(value);
     }
 
-    public static void selectBYVisibleText(WebElement element, String value){
+    public static void selectBYVisibleText(WebDriver driver,WebElement element, String value){
+        waitForvisibilty(driver,element);
         Select sel = new Select(element);
         sel.selectByVisibleText(value);
     }
@@ -138,28 +157,7 @@ public class BasePage {
         return city;
     }
 
-    public static Object[][] Excelread(String Sheetname) throws IOException {
-        String Excelpath = BasePage.getvalue("Excelpath");
-        File excelFile = new File(Excelpath);
-        FileInputStream fis = new FileInputStream(excelFile);
-        XSSFWorkbook workbook = new XSSFWorkbook(fis);
-        XSSFSheet sheet = workbook.getSheet(Sheetname);
-        int noOfRows = sheet.getPhysicalNumberOfRows();
-        int noOfColumns = sheet.getRow(0).getLastCellNum();
-        String[][] data = new String[noOfRows - 1][noOfColumns];
-        for (int i = 0; i < noOfRows - 1; i++) {
-            for (int j = 0; j < noOfColumns; j++) {
-                DataFormatter df = new DataFormatter();
-                data[i][j] = df.formatCellValue(sheet.getRow(i + 1).getCell(j));
-            }
-        }
-        workbook.close();
-        fis.close();
-        for (String[] dataArr : data) {
-            log1.info(Arrays.toString(dataArr));
-        }
-        return data;
-    }
+
 
 
 }

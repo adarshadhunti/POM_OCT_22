@@ -1,14 +1,13 @@
 package testcases;
 
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-import pages.BasePage;
-import pages.HomePage;
-import pages.UsedCarPage;
+import org.testng.annotations.*;
+import pages.*;
+import resources.*;
+
 
 public class TC_HM_003_parameterize_excel_util extends BaseTest {
 
-    @Test(dataProvider = "getData")
+    @Test(dataProvider = "getData",retryAnalyzer = Retry.class)
     public void TC_HM_003_parameterize_excel_util(String city, String no_of_brands) {
         //String city = BasePage.generateCity();
         HomePage hp = new HomePage(driver);
@@ -22,7 +21,7 @@ public class TC_HM_003_parameterize_excel_util extends BaseTest {
     @DataProvider
     public Object[][] getData() throws Exception {
         String Sheetname = "Sheet1";
-        return BasePage.Excelread(Sheetname);
+        return ExcelUtil.Excelread(Sheetname);
 
     }
 }

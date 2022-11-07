@@ -1,13 +1,13 @@
 package testcases;
 
 import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.NewCarPage;
+import pages.*;
+import resources.Retry;
 
 public class TC_HM_002 extends BaseTest{
 
 
-    @Test
+    @Test(retryAnalyzer = Retry.class)
     public void TC_HM_002(){
 
         HomePage hp = new HomePage(driver);

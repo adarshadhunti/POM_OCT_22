@@ -1,21 +1,17 @@
 package testcases;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-import pages.BasePage;
-import pages.HomePage;
-import pages.UsedCarPage;
-
+import org.apache.poi.xssf.usermodel.*;
+import org.testng.annotations.*;
+import pages.*;
+import resources.Retry;
 import java.io.File;
 import java.io.FileInputStream;
 
 
 public class TC_HM_003_parameterize_excel extends BaseTest {
 
-    @Test(dataProvider = "getData")
+    @Test(dataProvider = "getData",retryAnalyzer = Retry.class)
     public void TC_HM_003_parameterize_excel(String city, String no_of_brands) {
         //String city = BasePage.generateCity();
         HomePage hp = new HomePage(driver);

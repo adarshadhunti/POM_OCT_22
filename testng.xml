@@ -4,15 +4,13 @@
     <listeners>
         <listener class-name="resources.Listeners"/>
     </listeners>
-    <test verbose="2" preserve-order="true" name="TestNG Suite">
+    <test verbose="2" preserve-order="true" name = "Parallel Tests" parallel = "methods" thread-count = "10">
         <!--
     parallel="classes">-->
         <classes>
             <class name="testcases.TC_HM_001"/>
             <class name="testcases.TC_HM_002"/>
-            <class name="testcases.TC_HM_003_parameterize"/>
-            <class name="testcases.TC_HM_003_parameterize_excel"/>
-            <class name="testcases.TC_HM_003_parameterize_excel_util"/>
+            <class name="testcases.TC_HM_003"/>
         </classes>
     </test>
 </suite>
