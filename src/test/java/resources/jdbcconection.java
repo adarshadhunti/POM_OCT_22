@@ -28,6 +28,7 @@ public class jdbcconection {
             }
             i++;
         }
+        con.close();
         return data;
     }
 }

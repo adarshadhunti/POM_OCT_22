@@ -6,13 +6,6 @@
   </listeners>
   <test thread-count="5" verbose="0" name="Parallel Tests(failed)" parallel="methods">
     <classes>
-      <class name="testcases.TC_HM_003_parameterize_excel">
-        <methods>
-          <include name="TC_HM_003_parameterize_excel" invocation-numbers="1"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testcases.TC_HM_003_parameterize_excel -->
       <class name="testcases.dbconnector">
         <methods>
           <include name="setup"/>
@@ -31,7 +24,7 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="TC_HM_003_parameterize_excel_util"/>
+          <include name="TC_HM_003_parameterize_excel_util1" invocation-numbers="0 1 2 4"/>
         </methods>
       </class> <!-- testcases.TC_HM_003_parameterize_excel_util1 -->
       <class name="testcases.TC_HM_003">

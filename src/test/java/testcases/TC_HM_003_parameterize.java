@@ -7,7 +7,7 @@ import resources.Retry;
 
 public class TC_HM_003_parameterize extends BaseTest {
 
-    @Test(dataProvider = "getData",retryAnalyzer = Retry.class)
+    @Test(dataProvider = "getData")
     public void TC_HM_003_parameterizer(String city) {
         //String city = BasePage.generateCity();
         HomePage hp = new HomePage(driver);

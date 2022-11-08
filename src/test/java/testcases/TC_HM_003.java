@@ -7,7 +7,7 @@ import resources.Retry;
 
 public class TC_HM_003 extends BaseTest {
 
-    @Test(retryAnalyzer = Retry.class)
+    @Test()
     public void TC_HM_003() {
         String city = BasePage.generateCity();
         HomePage hp = new HomePage(driver);
