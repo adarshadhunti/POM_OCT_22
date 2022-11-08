@@ -8,7 +8,7 @@ import resources.jdbcconection;
 
 import java.sql.SQLException;
 public class dbconnector extends BaseTest {
-        @Test(dataProvider="getData3", retryAnalyzer = Retry.class)
+        @Test(dataProvider="getData3")
         public void TC_HM_003_parameterize_dbfetch_util(String city, String no_of_brands) {
             //String city = BasePage.generateCity();
             HomePage hp = new HomePage(driver);
