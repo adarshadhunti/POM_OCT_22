@@ -7,12 +7,13 @@ import pages.*;
 import resources.Retry;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 
 
 public class TC_HM_003_parameterize_excel extends BaseTest {
 
     @Test(dataProvider = "getData")
-    public void TC_HM_003_parameterize_excel(String city, String no_of_brands) {
+    public void TC_HM_003_parameterize_excel(String city, String no_of_brands) throws IOException {
         //String city = BasePage.generateCity();
         HomePage hp = new HomePage(driver);
         hp.navigateToUsedCar();

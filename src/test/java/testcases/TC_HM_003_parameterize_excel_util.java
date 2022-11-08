@@ -4,11 +4,13 @@ import org.testng.annotations.*;
 import pages.*;
 import resources.*;
 
+import java.io.IOException;
+
 
 public class TC_HM_003_parameterize_excel_util extends BaseTest {
 
     @Test(dataProvider = "getData")
-    public void TC_HM_003_parameterize_excel_util(String city, String no_of_brands) {
+    public void TC_HM_003_parameterize_excel_util(String city, String no_of_brands) throws IOException {
         //String city = BasePage.generateCity();
         HomePage hp = new HomePage(driver);
         hp.navigateToUsedCar();

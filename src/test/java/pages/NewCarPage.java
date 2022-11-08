@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.io.IOException;
 import java.util.List;
 
 public class NewCarPage extends BasePage{
@@ -21,7 +22,7 @@ public class NewCarPage extends BasePage{
 
 
 
-    public void carTitles(){
+    public void carTitles() throws IOException {
         click(driver,viewMore);
         System.out.println("Total Car Brands: "+ carTitles.size());
         for(WebElement title : carTitles){

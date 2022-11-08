@@ -14,6 +14,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import testcases.BaseTest;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -76,8 +78,10 @@ public class BasePage {
         actions.moveToElement(elementsByName).build().perform();
     }
 
-    public static void click(WebDriver driver, WebElement element){
+    public static void click(WebDriver driver, WebElement element) throws IOException {
         waitForvisibilty(driver,element);
+        BaseTest br= new BaseTest();
+        log1.info(br.getScreenShotPath("click",driver));
         Actions actions = new Actions(driver);
         actions.click(element).build().perform();
     }

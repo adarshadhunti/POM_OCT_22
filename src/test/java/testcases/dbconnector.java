@@ -6,10 +6,11 @@ import pages.UsedCarPage;
 import resources.Retry;
 import resources.jdbcconection;
 
+import java.io.IOException;
 import java.sql.SQLException;
 public class dbconnector extends BaseTest {
         @Test(dataProvider="getData3")
-        public void TC_HM_003_parameterize_dbfetch_util(String city, String no_of_brands) {
+        public void TC_HM_003_parameterize_dbfetch_util(String city, String no_of_brands) throws IOException {
             //String city = BasePage.generateCity();
             HomePage hp = new HomePage(driver);
             hp.navigateToUsedCar();

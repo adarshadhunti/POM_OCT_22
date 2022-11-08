@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.io.IOException;
 import java.util.List;
 
 public class HomePage  extends BasePage{
@@ -51,12 +52,12 @@ public class HomePage  extends BasePage{
         assertTitle(reviewNews,"REVIEWS & NEWS");
     }
 
-    public void navigateToSearch() {
+    public void navigateToSearch() throws IOException {
         assertTitle(searchButton,"Search");
         click(driver,searchButton);
     }
 
-    public void carTitles(){
+    public void carTitles() throws IOException {
         click(driver,viewMore);
         System.out.println("Total Car Titles: "+ carTitles.size());
         for(WebElement title : carTitles){
@@ -64,13 +65,13 @@ public class HomePage  extends BasePage{
         }
     }
 
-    public void searchBasedOnCity(String city){
+    public void searchBasedOnCity(String city) throws IOException {
         searchTextField.sendKeys(city);
         waitForvisibilty(driver,searchButton);
         click(driver,searchButton);
     }
 
-    public void navigateToUsedCar(){
+    public void navigateToUsedCar() throws IOException {
         sleep(2000);
         click(driver,usedButton);
 

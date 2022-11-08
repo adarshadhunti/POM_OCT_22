@@ -4,11 +4,13 @@ import org.testng.annotations.*;
 import pages.*;
 import resources.Retry;
 
+import java.io.IOException;
+
 
 public class TC_HM_003_parameterize extends BaseTest {
 
     @Test(dataProvider = "getData")
-    public void TC_HM_003_parameterizer(String city) {
+    public void TC_HM_003_parameterizer(String city) throws IOException {
         //String city = BasePage.generateCity();
         HomePage hp = new HomePage(driver);
         hp.navigateToUsedCar();
