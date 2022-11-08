@@ -13,15 +13,12 @@ public class jdbcconection {
         String password = BasePage.getvalue("dbpassword");
         Connection con = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/sampledb", "root", "root123");
         Statement s = con.createStatement();
-
         ResultSet rs1 = s.executeQuery("select count(*) from " + tablename );
         rs1.next();
         int noofrows=Integer.parseInt(rs1.getString(1));
-
         ResultSet rs = s.executeQuery("select * from " +tablename);
         ResultSetMetaData rsmd = rs.getMetaData();
         int column_count = rsmd.getColumnCount();
-
         String[][] data = new String[noofrows][column_count];
         int i = 0;
         while (rs.next()) {
@@ -31,7 +28,6 @@ public class jdbcconection {
             }
             i++;
         }
-
         return data;
     }
 }
