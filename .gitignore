@@ -1,0 +1,8 @@
+
+*.class
+target/test-classes/pages/BasePage.class
+target/test-classes/pages/HomePage.class
+target/test-classes/pages/NewCarPage.class
+target/test-classes/resources/Listeners.class
+target/test-classes/testcases/BaseTest.class
+*.class
