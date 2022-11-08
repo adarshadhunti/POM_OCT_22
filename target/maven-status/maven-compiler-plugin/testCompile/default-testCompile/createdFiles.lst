@@ -1,8 +1,10 @@
 pages\BasePage.class
+testcases\dbconnector.class
 testcases\HelloWorld.class
 testcases\TC_HM_002.class
 pages\HomePage.class
 pages\NewCarPage.class
+resources\jdbcconection.class
 resources\ExcelUtil.class
 resources\Listeners.class
 resources\ExtentReporterNG.class

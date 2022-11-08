@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="27.387" tests="4" errors="0" skipped="1" failures="1">
+<testsuite name="TestSuite" time="348.226" tests="29" errors="0" skipped="9" failures="8">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_321\jre\bin"/>
@@ -62,9 +62,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="TC_HM_001" classname="testcases.TC_HM_001" time="6.505"/>
-  <testcase name="TC_HM_002" classname="testcases.TC_HM_002" time="9.893"/>
-  <testcase name="TC_HM_003" classname="testcases.TC_HM_003" time="0">
+  <testcase name="TC_HM_001" classname="testcases.TC_HM_001" time="3.873"/>
+  <testcase name="TC_HM_002" classname="testcases.TC_HM_002" time="23.566"/>
+  <testcase name="TC_HM_003_parameterize_excel_util" classname="testcases.TC_HM_003_parameterize_excel_util" time="30.149"/>
+  <testcase name="TC_HM_003_parameterize_dbfetch_util" classname="testcases.dbconnector" time="0">
     <skipped/>
     <system-out>log4j: System property is :null
 log4j: Standard DocumentBuilderFactory search succeded.
@@ -88,11 +89,45 @@ log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{
 log4j: setFile called: C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log, true
 log4j: setFile ended
 log4j: Adding appender named [file] to category [root].
-2022-11-07 18:59:40 INFO  BasePage:67 - Waiting for the elementKolkata, West Bengal
 </system-out>
   </testcase>
-  <testcase name="TC_HM_003" classname="testcases.TC_HM_003" time="10.989">
-    <failure message="Not matching expected [46] but found [50]" type="java.lang.AssertionError">java.lang.AssertionError: Not matching expected [46] but found [50]
+  <testcase name="TC_HM_003_parameterize_excel" classname="testcases.TC_HM_003_parameterize_excel" time="33.36"/>
+  <testcase name="TC_HM_003" classname="testcases.TC_HM_003" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="TC_HM_003_parameterizer" classname="testcases.TC_HM_003_parameterize" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="TC_HM_003_parameterize_excel_util" classname="testcases.TC_HM_003_parameterize_excel_util" time="26.932"/>
+  <testcase name="TC_HM_003_parameterize_dbfetch_util" classname="testcases.dbconnector" time="29.916">
+    <failure message="Not matching expected [31] but found [49]" type="java.lang.AssertionError">java.lang.AssertionError: Not matching expected [31] but found [49]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+</failure>
+    <system-err>Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 10443
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+</system-err>
+  </testcase>
+  <testcase name="TC_HM_003_parameterizer" classname="testcases.TC_HM_003_parameterize" time="30.181">
+    <failure message="Not matching expected [46] but found [49]" type="java.lang.AssertionError">java.lang.AssertionError: Not matching expected [46] but found [49]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:39)
+	at testcases.TC_HM_003_parameterize.TC_HM_003_parameterizer(TC_HM_003_parameterize.java:18)
+</failure>
+  </testcase>
+  <testcase name="TC_HM_003" classname="testcases.TC_HM_003" time="40.526">
+    <failure message="Not matching expected [46] but found [49]" type="java.lang.AssertionError">java.lang.AssertionError: Not matching expected [46] but found [49]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -123,9 +158,105 @@ log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{
 log4j: setFile called: C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log, true
 log4j: setFile ended
 log4j: Adding appender named [file] to category [root].
-2022-11-07 18:59:47 INFO  BasePage:67 - Waiting for the elementUsed
-2022-11-07 18:59:48 INFO  BasePage:67 - Waiting for the elementSearch
-2022-11-07 18:59:48 INFO  BasePage:67 - Waiting for the elementSearch
+2022-11-08 12:52:34 INFO  BasePage:67 - Waiting for the elementDelhi, Delhi
+</system-out>
+    <system-err>Nov 08, 2022 12:52:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 1180
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 36666
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2022 12:52:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Nov 08, 2022 12:52:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase name="TC_HM_003_parameterize_excel_util" classname="testcases.TC_HM_003_parameterize_excel_util" time="17.637"/>
+  <testcase name="TC_HM_003_parameterize_dbfetch_util" classname="testcases.dbconnector" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="TC_HM_003_parameterizer" classname="testcases.TC_HM_003_parameterize" time="0">
+    <skipped/>
+    <system-err>Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 3327
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+</system-err>
+  </testcase>
+  <testcase name="TC_HM_003_parameterize_excel_util" classname="testcases.TC_HM_003_parameterize_excel_util" time="14.648"/>
+  <testcase name="TC_HM_003_parameterize_dbfetch_util" classname="testcases.dbconnector" time="16.755">
+    <failure message="Not matching expected [32] but found [49]" type="java.lang.AssertionError">java.lang.AssertionError: Not matching expected [32] but found [49]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+</failure>
+    <system-err>Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 30586
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2022 12:53:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase name="TC_HM_003_parameterizer" classname="testcases.TC_HM_003_parameterize" time="17.337">
+    <failure message="Not matching expected [46] but found [49]" type="java.lang.AssertionError">java.lang.AssertionError: Not matching expected [46] but found [49]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:39)
+	at testcases.TC_HM_003_parameterize.TC_HM_003_parameterizer(TC_HM_003_parameterize.java:18)
+</failure>
+  </testcase>
+  <testcase name="TC_HM_003_parameterize_excel_util" classname="testcases.TC_HM_003_parameterize_excel_util" time="10.134"/>
+  <testcase name="TC_HM_003_parameterize_dbfetch_util" classname="testcases.dbconnector" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="TC_HM_003_parameterize_dbfetch_util" classname="testcases.dbconnector" time="7.916">
+    <failure message="Not matching expected [28] but found [49]" type="java.lang.AssertionError">java.lang.AssertionError: Not matching expected [28] but found [49]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+</failure>
+    <system-out>log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "true".
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Level value for root is  [INFO].
+log4j: root level set to INFO
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [root].
+log4j: Class name: [org.apache.log4j.RollingFileAppender]
+log4j: Setting property [append] to [true].
+log4j: Setting property [maxFileSize] to [10MB].
+log4j: Setting property [maxBackupIndex] to [10].
+log4j: Setting property [file] to [C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: setFile called: C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log, true
+log4j: setFile ended
+log4j: Adding appender named [file] to category [root].
+2022-11-08 12:53:56 INFO  BasePage:67 - Waiting for the elementUsed
+2022-11-08 12:53:56 INFO  BasePage:67 - Waiting for the elementSearch
+2022-11-08 12:53:56 INFO  BasePage:67 - Waiting for the elementSearch
 log4j: System property is :null
 log4j: Standard DocumentBuilderFactory search succeded.
 log4j: DocumentBuilderFactory is: com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
@@ -148,14 +279,276 @@ log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{
 log4j: setFile called: C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log, true
 log4j: setFile ended
 log4j: Adding appender named [file] to category [root].
-2022-11-07 18:59:55 INFO  BasePage:67 - Waiting for the elementThiruvananthapuram, Kerala
+2022-11-08 12:54:00 INFO  BasePage:67 - Waiting for the elementMysore, Karnataka
 </system-out>
-    <system-err>Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 6209
+    <system-err>Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 47655
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Nov 07, 2022 6:59:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 08, 2022 12:53:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </system-err>
   </testcase>
+  <testcase name="TC_HM_003_parameterize_dbfetch_util" classname="testcases.dbconnector" time="0">
+    <skipped/>
+    <system-out>log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "true".
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Level value for root is  [INFO].
+log4j: root level set to INFO
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [root].
+log4j: Class name: [org.apache.log4j.RollingFileAppender]
+log4j: Setting property [append] to [true].
+log4j: Setting property [maxFileSize] to [10MB].
+log4j: Setting property [maxBackupIndex] to [10].
+log4j: Setting property [file] to [C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: setFile called: C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log, true
+log4j: setFile ended
+log4j: Adding appender named [file] to category [root].
+2022-11-08 12:54:10 INFO  BasePage:67 - Waiting for the elementUsed
+2022-11-08 12:54:10 INFO  BasePage:67 - Waiting for the elementSearch
+2022-11-08 12:54:10 INFO  BasePage:67 - Waiting for the elementSearch
+log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "true".
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Level value for root is  [INFO].
+log4j: root level set to INFO
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [root].
+log4j: Class name: [org.apache.log4j.RollingFileAppender]
+log4j: Setting property [append] to [true].
+log4j: Setting property [maxFileSize] to [10MB].
+log4j: Setting property [maxBackupIndex] to [10].
+log4j: Setting property [file] to [C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: setFile called: C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log, true
+log4j: setFile ended
+log4j: Adding appender named [file] to category [root].
+2022-11-08 12:54:14 INFO  BasePage:67 - Waiting for the elementMangalore, Karnataka
+</system-out>
+    <system-err>Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 37203
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2022 12:54:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase name="TC_HM_003_parameterize_dbfetch_util" classname="testcases.dbconnector" time="7.984">
+    <failure message="Not matching expected [31] but found [49]" type="java.lang.AssertionError">java.lang.AssertionError: Not matching expected [31] but found [49]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+</failure>
+    <system-out>log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "true".
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Level value for root is  [INFO].
+log4j: root level set to INFO
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [root].
+log4j: Class name: [org.apache.log4j.RollingFileAppender]
+log4j: Setting property [append] to [true].
+log4j: Setting property [maxFileSize] to [10MB].
+log4j: Setting property [maxBackupIndex] to [10].
+log4j: Setting property [file] to [C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: setFile called: C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log, true
+log4j: setFile ended
+log4j: Adding appender named [file] to category [root].
+2022-11-08 12:54:20 INFO  BasePage:67 - Waiting for the elementUsed
+2022-11-08 12:54:20 INFO  BasePage:67 - Waiting for the elementSearch
+2022-11-08 12:54:20 INFO  BasePage:67 - Waiting for the elementSearch
+log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "true".
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Level value for root is  [INFO].
+log4j: root level set to INFO
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [root].
+log4j: Class name: [org.apache.log4j.RollingFileAppender]
+log4j: Setting property [append] to [true].
+log4j: Setting property [maxFileSize] to [10MB].
+log4j: Setting property [maxBackupIndex] to [10].
+log4j: Setting property [file] to [C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: setFile called: C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log, true
+log4j: setFile ended
+log4j: Adding appender named [file] to category [root].
+2022-11-08 12:54:24 INFO  BasePage:67 - Waiting for the elementMangalore, Karnataka
+</system-out>
+    <system-err>Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 13672
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2022 12:54:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase name="TC_HM_003_parameterize_dbfetch_util" classname="testcases.dbconnector" time="0">
+    <skipped/>
+    <system-out>log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "true".
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Level value for root is  [INFO].
+log4j: root level set to INFO
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [root].
+log4j: Class name: [org.apache.log4j.RollingFileAppender]
+log4j: Setting property [append] to [true].
+log4j: Setting property [maxFileSize] to [10MB].
+log4j: Setting property [maxBackupIndex] to [10].
+log4j: Setting property [file] to [C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: setFile called: C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log, true
+log4j: setFile ended
+log4j: Adding appender named [file] to category [root].
+2022-11-08 12:54:31 INFO  BasePage:67 - Waiting for the elementUsed
+2022-11-08 12:54:32 INFO  BasePage:67 - Waiting for the elementSearch
+2022-11-08 12:54:32 INFO  BasePage:67 - Waiting for the elementSearch
+log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "true".
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Level value for root is  [INFO].
+log4j: root level set to INFO
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [root].
+log4j: Class name: [org.apache.log4j.RollingFileAppender]
+log4j: Setting property [append] to [true].
+log4j: Setting property [maxFileSize] to [10MB].
+log4j: Setting property [maxBackupIndex] to [10].
+log4j: Setting property [file] to [C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: setFile called: C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log, true
+log4j: setFile ended
+log4j: Adding appender named [file] to category [root].
+2022-11-08 12:54:37 INFO  BasePage:67 - Waiting for the elementDurgaPur, West Bengal
+</system-out>
+    <system-err>Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 24000
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2022 12:54:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase name="TC_HM_003_parameterize_dbfetch_util" classname="testcases.dbconnector" time="8.135">
+    <failure message="Not matching expected [35] but found [49]" type="java.lang.AssertionError">java.lang.AssertionError: Not matching expected [35] but found [49]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+</failure>
+    <system-out>log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "true".
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Level value for root is  [INFO].
+log4j: root level set to INFO
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [root].
+log4j: Class name: [org.apache.log4j.RollingFileAppender]
+log4j: Setting property [append] to [true].
+log4j: Setting property [maxFileSize] to [10MB].
+log4j: Setting property [maxBackupIndex] to [10].
+log4j: Setting property [file] to [C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: setFile called: C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log, true
+log4j: setFile ended
+log4j: Adding appender named [file] to category [root].
+2022-11-08 12:54:43 INFO  BasePage:67 - Waiting for the elementUsed
+2022-11-08 12:54:43 INFO  BasePage:67 - Waiting for the elementSearch
+2022-11-08 12:54:43 INFO  BasePage:67 - Waiting for the elementSearch
+log4j: System property is :null
+log4j: Standard DocumentBuilderFactory search succeded.
+log4j: DocumentBuilderFactory is: com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
+log4j: debug attribute= "true".
+log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Level value for root is  [INFO].
+log4j: root level set to INFO
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: Adding appender named [console] to category [root].
+log4j: Class name: [org.apache.log4j.RollingFileAppender]
+log4j: Setting property [append] to [true].
+log4j: Setting property [maxFileSize] to [10MB].
+log4j: Setting property [maxBackupIndex] to [10].
+log4j: Setting property [file] to [C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n].
+log4j: setFile called: C:/Users/adars/workspace/POM_OCT_22/logs/myStruts1App.log, true
+log4j: setFile ended
+log4j: Adding appender named [file] to category [root].
+2022-11-08 12:54:48 INFO  BasePage:67 - Waiting for the elementDurgaPur, West Bengal
+</system-out>
+    <system-err>Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 43745
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Nov 08, 2022 12:54:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
+  <testcase name="TC_HM_003_parameterize_excel" classname="testcases.TC_HM_003_parameterize_excel" time="0">
+    <skipped/>
+    <system-err>[1667892416.917][SEVERE]: Timed out receiving message from renderer: 300.000
+[1667892416.932][SEVERE]: Timed out receiving message from renderer: 300.000
+</system-err>
+  </testcase>
+  <testcase name="TC_HM_003_parameterize_excel" classname="testcases.TC_HM_003_parameterize_excel" time="6.756"/>
+  <testcase name="TC_HM_003_parameterize_excel" classname="testcases.TC_HM_003_parameterize_excel" time="6.404"/>
+  <testcase name="TC_HM_003_parameterize_excel" classname="testcases.TC_HM_003_parameterize_excel" time="6.655"/>
+  <testcase name="TC_HM_003_parameterize_excel" classname="testcases.TC_HM_003_parameterize_excel" time="9.362"/>
 </testsuite>

@@ -10,8 +10,8 @@ import resources.Retry;
 
 public class TC_HM_003_parameterize_excel_util1 extends BaseTest {
 
-    @Test(dataProvider = "getData",retryAnalyzer = Retry.class)
-    public void TC_HM_003_parameterize_excel_util(String city, String no_of_brands) {
+    @Test
+    public void TC_HM_003_parameterize_excel_util1(String city, String no_of_brands) {
         //String city = BasePage.generateCity();
         HomePage hp = new HomePage(driver);
         hp.navigateToUsedCar();

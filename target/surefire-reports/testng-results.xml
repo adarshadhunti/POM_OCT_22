@@ -1,23 +1,577 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" retried="1" total="4" passed="2">
+<testng-results skipped="0" failed="9" ignored="0" retried="9" total="30" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test Suite" duration-ms="90177" started-at="2022-11-07T18:58:26 IST" finished-at="2022-11-07T18:59:57 IST">
+  <suite name="All Test Suite" duration-ms="428882" started-at="2022-11-08T12:50:31 IST" finished-at="2022-11-08T12:57:40 IST">
     <groups>
     </groups>
-    <test name="Parallel Tests" duration-ms="90177" started-at="2022-11-07T18:58:26 IST" finished-at="2022-11-07T18:59:57 IST">
-      <class name="testcases.TC_HM_003">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003@7ff2a664]" name="setup" is-config="true" duration-ms="13749" started-at="2022-11-07T18:58:26 IST" finished-at="2022-11-07T18:58:40 IST">
+    <test name="Parallel Tests" duration-ms="428882" started-at="2022-11-08T12:50:31 IST" finished-at="2022-11-08T12:57:40 IST">
+      <class name="testcases.TC_HM_003_parameterize_excel_util1">
+        <test-method status="FAIL" signature="TC_HM_003_parameterize_excel_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util1@64d2d351]" name="TC_HM_003_parameterize_excel_util" duration-ms="0" started-at="2022-11-08T12:50:31 IST" finished-at="2022-11-08T12:50:31 IST">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [TC_HM_003_parameterize_excel_util] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [TC_HM_003_parameterize_excel_util] with [class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
+at org.testng.internal.Parameters.createParameters(Parameters.java:669)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:856)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:704)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:904)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_excel_util -->
+      </class> <!-- testcases.TC_HM_003_parameterize_excel_util1 -->
+      <class name="testcases.TC_HM_003_parameterize_excel_util">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="setup" is-config="true" duration-ms="15265" started-at="2022-11-08T12:50:32 IST" finished-at="2022-11-08T12:50:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="TC_HM_003()[pri:0, instance:testcases.TC_HM_003@7ff2a664]" name="TC_HM_003" duration-ms="60475" retried="true" started-at="2022-11-07T18:58:40 IST" finished-at="2022-11-07T18:59:41 IST">
+        <test-method status="PASS" signature="TC_HM_003_parameterize_excel_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="TC_HM_003_parameterize_excel_util" duration-ms="32338" started-at="2022-11-08T12:50:48 IST" data-provider="getData" finished-at="2022-11-08T12:51:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_excel_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="tearDown" is-config="true" duration-ms="4196" started-at="2022-11-08T12:51:20 IST" finished-at="2022-11-08T12:51:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="setup" is-config="true" duration-ms="27897" started-at="2022-11-08T12:51:24 IST" finished-at="2022-11-08T12:51:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_HM_003_parameterize_excel_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="TC_HM_003_parameterize_excel_util" duration-ms="30024" started-at="2022-11-08T12:51:52 IST" data-provider="getData" finished-at="2022-11-08T12:52:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mumbai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_excel_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="tearDown" is-config="true" duration-ms="999" started-at="2022-11-08T12:52:22 IST" finished-at="2022-11-08T12:52:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="setup" is-config="true" duration-ms="27804" started-at="2022-11-08T12:52:23 IST" finished-at="2022-11-08T12:52:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_HM_003_parameterize_excel_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="TC_HM_003_parameterize_excel_util" duration-ms="19946" started-at="2022-11-08T12:52:51 IST" data-provider="getData" finished-at="2022-11-08T12:53:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chennai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_excel_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="tearDown" is-config="true" duration-ms="352" started-at="2022-11-08T12:53:11 IST" finished-at="2022-11-08T12:53:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="setup" is-config="true" duration-ms="4884" started-at="2022-11-08T12:53:11 IST" finished-at="2022-11-08T12:53:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_HM_003_parameterize_excel_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="TC_HM_003_parameterize_excel_util" duration-ms="16242" started-at="2022-11-08T12:53:16 IST" data-provider="getData" finished-at="2022-11-08T12:53:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hyderabad]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_excel_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="tearDown" is-config="true" duration-ms="343" started-at="2022-11-08T12:53:32 IST" finished-at="2022-11-08T12:53:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="setup" is-config="true" duration-ms="4869" started-at="2022-11-08T12:53:33 IST" finished-at="2022-11-08T12:53:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_HM_003_parameterize_excel_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="TC_HM_003_parameterize_excel_util" duration-ms="11602" started-at="2022-11-08T12:53:37 IST" data-provider="getData" finished-at="2022-11-08T12:53:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_excel_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@6b53e23f]" name="tearDown" is-config="true" duration-ms="328" started-at="2022-11-08T12:53:49 IST" finished-at="2022-11-08T12:53:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC_HM_003_parameterize_excel_util -->
+      <class name="testcases.TC_HM_003_parameterize">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize@255b53dc]" name="setup" is-config="true" duration-ms="17039" started-at="2022-11-08T12:50:31 IST" finished-at="2022-11-08T12:50:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="TC_HM_003_parameterizer(java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize@255b53dc]" name="TC_HM_003_parameterizer" duration-ms="35752" retried="true" started-at="2022-11-08T12:50:48 IST" data-provider="getData" finished-at="2022-11-08T12:51:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Not matching expected [46] but found [50]]]>
+              <![CDATA[Not matching expected [46] but found [49]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Not matching expected [46] but found [50]
+              <![CDATA[java.lang.AssertionError: Not matching expected [46] but found [49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:39)
+at testcases.TC_HM_003_parameterize.TC_HM_003_parameterizer(TC_HM_003_parameterize.java:18)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterizer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize@255b53dc]" name="tearDown" is-config="true" duration-ms="921" started-at="2022-11-08T12:51:24 IST" finished-at="2022-11-08T12:51:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize@255b53dc]" name="setup" is-config="true" duration-ms="30400" started-at="2022-11-08T12:51:25 IST" finished-at="2022-11-08T12:51:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="TC_HM_003_parameterizer(java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize@255b53dc]" name="TC_HM_003_parameterizer" duration-ms="28827" started-at="2022-11-08T12:51:55 IST" data-provider="getData" finished-at="2022-11-08T12:52:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not matching expected [46] but found [49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not matching expected [46] but found [49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:39)
+at testcases.TC_HM_003_parameterize.TC_HM_003_parameterizer(TC_HM_003_parameterize.java:18)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterizer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize@255b53dc]" name="tearDown" is-config="true" duration-ms="599" started-at="2022-11-08T12:52:25 IST" finished-at="2022-11-08T12:52:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize@255b53dc]" name="setup" is-config="true" duration-ms="27297" started-at="2022-11-08T12:52:26 IST" finished-at="2022-11-08T12:52:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="TC_HM_003_parameterizer(java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize@255b53dc]" name="TC_HM_003_parameterizer" duration-ms="18299" retried="true" started-at="2022-11-08T12:52:53 IST" data-provider="getData" finished-at="2022-11-08T12:53:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mumbai]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not matching expected [46] but found [49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not matching expected [46] but found [49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:39)
+at testcases.TC_HM_003_parameterize.TC_HM_003_parameterizer(TC_HM_003_parameterize.java:18)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterizer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize@255b53dc]" name="tearDown" is-config="true" duration-ms="348" started-at="2022-11-08T12:53:11 IST" finished-at="2022-11-08T12:53:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize@255b53dc]" name="setup" is-config="true" duration-ms="5654" started-at="2022-11-08T12:53:12 IST" finished-at="2022-11-08T12:53:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="TC_HM_003_parameterizer(java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize@255b53dc]" name="TC_HM_003_parameterizer" duration-ms="15835" started-at="2022-11-08T12:53:17 IST" data-provider="getData" finished-at="2022-11-08T12:53:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mumbai]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not matching expected [46] but found [49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not matching expected [46] but found [49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:39)
+at testcases.TC_HM_003_parameterize.TC_HM_003_parameterizer(TC_HM_003_parameterize.java:18)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterizer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize@255b53dc]" name="tearDown" is-config="true" duration-ms="323" started-at="2022-11-08T12:53:35 IST" finished-at="2022-11-08T12:53:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC_HM_003_parameterize -->
+      <class name="testcases.TC_HM_003_parameterize_excel">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="setup" is-config="true" duration-ms="15242" started-at="2022-11-08T12:50:32 IST" finished-at="2022-11-08T12:50:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_HM_003_parameterize_excel(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="TC_HM_003_parameterize_excel" duration-ms="35573" started-at="2022-11-08T12:50:48 IST" data-provider="getData" finished-at="2022-11-08T12:51:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_excel -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="tearDown" is-config="true" duration-ms="1251" started-at="2022-11-08T12:51:23 IST" finished-at="2022-11-08T12:51:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="setup" is-config="true" duration-ms="28071" started-at="2022-11-08T12:51:24 IST" finished-at="2022-11-08T12:51:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="TC_HM_003_parameterize_excel(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="TC_HM_003_parameterize_excel" duration-ms="304012" retried="true" started-at="2022-11-08T12:51:52 IST" data-provider="getData" finished-at="2022-11-08T12:56:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mumbai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[49]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7QOC93L', ip: '192.168.29.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\adars\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 31ce885d3072d0c779bac41fe4dbec8f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7QOC93L', ip: '192.168.29.146', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\adars\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 31ce885d3072d0c779bac41fe4dbec8f
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at pages.BasePage.click(BasePage.java:82)
+at pages.HomePage.searchBasedOnCity(HomePage.java:70)
+at testcases.TC_HM_003_parameterize_excel.TC_HM_003_parameterize_excel(TC_HM_003_parameterize_excel.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_excel -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="tearDown" is-config="true" duration-ms="152" started-at="2022-11-08T12:56:56 IST" finished-at="2022-11-08T12:56:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="setup" is-config="true" duration-ms="3589" started-at="2022-11-08T12:56:57 IST" finished-at="2022-11-08T12:57:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_HM_003_parameterize_excel(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="TC_HM_003_parameterize_excel" duration-ms="6757" started-at="2022-11-08T12:57:00 IST" data-provider="getData" finished-at="2022-11-08T12:57:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mumbai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_excel -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="tearDown" is-config="true" duration-ms="146" started-at="2022-11-08T12:57:07 IST" finished-at="2022-11-08T12:57:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="setup" is-config="true" duration-ms="3054" started-at="2022-11-08T12:57:07 IST" finished-at="2022-11-08T12:57:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_HM_003_parameterize_excel(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="TC_HM_003_parameterize_excel" duration-ms="6405" started-at="2022-11-08T12:57:10 IST" data-provider="getData" finished-at="2022-11-08T12:57:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chennai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_excel -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="tearDown" is-config="true" duration-ms="134" started-at="2022-11-08T12:57:17 IST" finished-at="2022-11-08T12:57:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="setup" is-config="true" duration-ms="3351" started-at="2022-11-08T12:57:17 IST" finished-at="2022-11-08T12:57:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_HM_003_parameterize_excel(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="TC_HM_003_parameterize_excel" duration-ms="6655" started-at="2022-11-08T12:57:20 IST" data-provider="getData" finished-at="2022-11-08T12:57:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hyderabad]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_excel -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="tearDown" is-config="true" duration-ms="126" started-at="2022-11-08T12:57:27 IST" finished-at="2022-11-08T12:57:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="setup" is-config="true" duration-ms="3382" started-at="2022-11-08T12:57:27 IST" finished-at="2022-11-08T12:57:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_HM_003_parameterize_excel(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="TC_HM_003_parameterize_excel" duration-ms="9361" started-at="2022-11-08T12:57:30 IST" data-provider="getData" finished-at="2022-11-08T12:57:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_excel -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003_parameterize_excel@1dd92fe2]" name="tearDown" is-config="true" duration-ms="161" started-at="2022-11-08T12:57:40 IST" finished-at="2022-11-08T12:57:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC_HM_003_parameterize_excel -->
+      <class name="testcases.TC_HM_003">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003@731f8236]" name="setup" is-config="true" duration-ms="16394" started-at="2022-11-08T12:50:31 IST" finished-at="2022-11-08T12:50:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="TC_HM_003()[pri:0, instance:testcases.TC_HM_003@731f8236]" name="TC_HM_003" duration-ms="35787" retried="true" started-at="2022-11-08T12:50:47 IST" finished-at="2022-11-08T12:51:23 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not matching expected [46] but found [49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not matching expected [46] but found [49]
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1413)
 at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -46,21 +600,21 @@ at java.lang.Thread.run(Thread.java:750)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_HM_003 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003@7ff2a664]" name="tearDown" is-config="true" duration-ms="1029" started-at="2022-11-07T18:59:41 IST" finished-at="2022-11-07T18:59:42 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003@731f8236]" name="tearDown" is-config="true" duration-ms="1299" started-at="2022-11-08T12:51:23 IST" finished-at="2022-11-08T12:51:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003@7ff2a664]" name="setup" is-config="true" duration-ms="3680" started-at="2022-11-07T18:59:42 IST" finished-at="2022-11-07T18:59:45 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003@731f8236]" name="setup" is-config="true" duration-ms="29212" started-at="2022-11-08T12:51:24 IST" finished-at="2022-11-08T12:51:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="TC_HM_003()[pri:0, instance:testcases.TC_HM_003@7ff2a664]" name="TC_HM_003" duration-ms="10118" started-at="2022-11-07T18:59:45 IST" finished-at="2022-11-07T18:59:56 IST">
+        <test-method status="FAIL" signature="TC_HM_003()[pri:0, instance:testcases.TC_HM_003@731f8236]" name="TC_HM_003" duration-ms="40952" started-at="2022-11-08T12:51:54 IST" finished-at="2022-11-08T12:52:35 IST">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Not matching expected [46] but found [50]]]>
+              <![CDATA[Not matching expected [46] but found [49]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Not matching expected [46] but found [50]
+              <![CDATA[java.lang.AssertionError: Not matching expected [46] but found [49]
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1413)
 at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -89,35 +643,587 @@ at java.lang.Thread.run(Thread.java:750)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_HM_003 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003@7ff2a664]" name="tearDown" is-config="true" duration-ms="208" started-at="2022-11-07T18:59:56 IST" finished-at="2022-11-07T18:59:57 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_003@731f8236]" name="tearDown" is-config="true" duration-ms="156" started-at="2022-11-08T12:52:36 IST" finished-at="2022-11-08T12:52:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC_HM_003 -->
-      <class name="testcases.TC_HM_002">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_002@6a472554]" name="setup" is-config="true" duration-ms="13605" started-at="2022-11-07T18:58:26 IST" finished-at="2022-11-07T18:58:40 IST">
+      <class name="testcases.dbconnector">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="setup" is-config="true" duration-ms="17857" started-at="2022-11-08T12:50:32 IST" finished-at="2022-11-08T12:50:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="TC_HM_002()[pri:0, instance:testcases.TC_HM_002@6a472554]" name="TC_HM_002" duration-ms="10039" started-at="2022-11-07T18:58:40 IST" finished-at="2022-11-07T18:58:50 IST">
+        <test-method status="SKIP" signature="TC_HM_003_parameterize_dbfetch_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="TC_HM_003_parameterize_dbfetch_util" duration-ms="30855" retried="true" started-at="2022-11-08T12:50:50 IST" data-provider="getData3" finished-at="2022-11-08T12:51:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[31]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not matching expected [31] but found [49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not matching expected [31] but found [49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_dbfetch_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="tearDown" is-config="true" duration-ms="3584" started-at="2022-11-08T12:51:21 IST" finished-at="2022-11-08T12:51:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="setup" is-config="true" duration-ms="29229" started-at="2022-11-08T12:51:24 IST" finished-at="2022-11-08T12:51:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="TC_HM_003_parameterize_dbfetch_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="TC_HM_003_parameterize_dbfetch_util" duration-ms="29813" started-at="2022-11-08T12:51:54 IST" data-provider="getData3" finished-at="2022-11-08T12:52:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[31]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not matching expected [31] but found [49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not matching expected [31] but found [49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_dbfetch_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="tearDown" is-config="true" duration-ms="1021" started-at="2022-11-08T12:52:25 IST" finished-at="2022-11-08T12:52:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="setup" is-config="true" duration-ms="27192" started-at="2022-11-08T12:52:26 IST" finished-at="2022-11-08T12:52:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="TC_HM_003_parameterize_dbfetch_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="TC_HM_003_parameterize_dbfetch_util" duration-ms="18171" retried="true" started-at="2022-11-08T12:52:53 IST" data-provider="getData3" finished-at="2022-11-08T12:53:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hassan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[32]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not matching expected [32] but found [49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not matching expected [32] but found [49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_dbfetch_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="tearDown" is-config="true" duration-ms="366" started-at="2022-11-08T12:53:11 IST" finished-at="2022-11-08T12:53:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="setup" is-config="true" duration-ms="5889" started-at="2022-11-08T12:53:12 IST" finished-at="2022-11-08T12:53:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="TC_HM_003_parameterize_dbfetch_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="TC_HM_003_parameterize_dbfetch_util" duration-ms="15570" started-at="2022-11-08T12:53:18 IST" data-provider="getData3" finished-at="2022-11-08T12:53:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hassan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[32]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not matching expected [32] but found [49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not matching expected [32] but found [49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_dbfetch_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="tearDown" is-config="true" duration-ms="413" started-at="2022-11-08T12:53:34 IST" finished-at="2022-11-08T12:53:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="setup" is-config="true" duration-ms="4161" started-at="2022-11-08T12:53:35 IST" finished-at="2022-11-08T12:53:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="TC_HM_003_parameterize_dbfetch_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="TC_HM_003_parameterize_dbfetch_util" duration-ms="11036" retried="true" started-at="2022-11-08T12:53:39 IST" data-provider="getData3" finished-at="2022-11-08T12:53:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mysore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[28]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not matching expected [28] but found [49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not matching expected [28] but found [49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_dbfetch_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="tearDown" is-config="true" duration-ms="258" started-at="2022-11-08T12:53:50 IST" finished-at="2022-11-08T12:53:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="setup" is-config="true" duration-ms="3225" started-at="2022-11-08T12:53:50 IST" finished-at="2022-11-08T12:53:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="TC_HM_003_parameterize_dbfetch_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="TC_HM_003_parameterize_dbfetch_util" duration-ms="6926" started-at="2022-11-08T12:53:54 IST" data-provider="getData3" finished-at="2022-11-08T12:54:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mysore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[28]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not matching expected [28] but found [49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not matching expected [28] but found [49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_dbfetch_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="tearDown" is-config="true" duration-ms="142" started-at="2022-11-08T12:54:01 IST" finished-at="2022-11-08T12:54:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="setup" is-config="true" duration-ms="5899" started-at="2022-11-08T12:54:02 IST" finished-at="2022-11-08T12:54:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="TC_HM_003_parameterize_dbfetch_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="TC_HM_003_parameterize_dbfetch_util" duration-ms="6805" retried="true" started-at="2022-11-08T12:54:08 IST" data-provider="getData3" finished-at="2022-11-08T12:54:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mangalore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[31]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not matching expected [31] but found [49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not matching expected [31] but found [49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_dbfetch_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="tearDown" is-config="true" duration-ms="158" started-at="2022-11-08T12:54:14 IST" finished-at="2022-11-08T12:54:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="setup" is-config="true" duration-ms="3354" started-at="2022-11-08T12:54:15 IST" finished-at="2022-11-08T12:54:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="TC_HM_003_parameterize_dbfetch_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="TC_HM_003_parameterize_dbfetch_util" duration-ms="7506" started-at="2022-11-08T12:54:18 IST" data-provider="getData3" finished-at="2022-11-08T12:54:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mangalore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[31]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not matching expected [31] but found [49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not matching expected [31] but found [49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_dbfetch_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="tearDown" is-config="true" duration-ms="136" started-at="2022-11-08T12:54:26 IST" finished-at="2022-11-08T12:54:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="setup" is-config="true" duration-ms="3282" started-at="2022-11-08T12:54:26 IST" finished-at="2022-11-08T12:54:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="TC_HM_003_parameterize_dbfetch_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="TC_HM_003_parameterize_dbfetch_util" duration-ms="7619" retried="true" started-at="2022-11-08T12:54:29 IST" data-provider="getData3" finished-at="2022-11-08T12:54:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[durga]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[35]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not matching expected [35] but found [49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not matching expected [35] but found [49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_dbfetch_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="tearDown" is-config="true" duration-ms="149" started-at="2022-11-08T12:54:37 IST" finished-at="2022-11-08T12:54:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="setup" is-config="true" duration-ms="3527" started-at="2022-11-08T12:54:37 IST" finished-at="2022-11-08T12:54:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="TC_HM_003_parameterize_dbfetch_util(java.lang.String,java.lang.String)[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="TC_HM_003_parameterize_dbfetch_util" duration-ms="7358" started-at="2022-11-08T12:54:41 IST" data-provider="getData3" finished-at="2022-11-08T12:54:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[durga]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[35]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Not matching expected [35] but found [49]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Not matching expected [35] but found [49]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:262)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:750)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_003_parameterize_dbfetch_util -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.dbconnector@1b68b9a4]" name="tearDown" is-config="true" duration-ms="140" started-at="2022-11-08T12:54:49 IST" finished-at="2022-11-08T12:54:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.dbconnector -->
+      <class name="testcases.TC_HM_002">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_002@226a82c4]" name="setup" is-config="true" duration-ms="15716" started-at="2022-11-08T12:50:31 IST" finished-at="2022-11-08T12:50:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_HM_002()[pri:0, instance:testcases.TC_HM_002@226a82c4]" name="TC_HM_002" duration-ms="26621" started-at="2022-11-08T12:50:47 IST" finished-at="2022-11-08T12:51:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_HM_002 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_002@6a472554]" name="tearDown" is-config="true" duration-ms="179" started-at="2022-11-07T18:58:50 IST" finished-at="2022-11-07T18:58:50 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_002@226a82c4]" name="tearDown" is-config="true" duration-ms="10777" started-at="2022-11-08T12:51:13 IST" finished-at="2022-11-08T12:51:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC_HM_002 -->
       <class name="testcases.TC_HM_001">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_001@80ec1f8]" name="setup" is-config="true" duration-ms="13523" started-at="2022-11-07T18:58:26 IST" finished-at="2022-11-07T18:58:40 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_001@38364841]" name="setup" is-config="true" duration-ms="16146" started-at="2022-11-08T12:50:31 IST" finished-at="2022-11-08T12:50:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="TC_HM_001()[pri:0, instance:testcases.TC_HM_001@80ec1f8]" name="TC_HM_001" duration-ms="6665" started-at="2022-11-07T18:58:40 IST" finished-at="2022-11-07T18:58:47 IST">
+        <test-method status="PASS" signature="TC_HM_001()[pri:0, instance:testcases.TC_HM_001@38364841]" name="TC_HM_001" duration-ms="6474" started-at="2022-11-08T12:50:47 IST" finished-at="2022-11-08T12:50:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_HM_001 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_001@80ec1f8]" name="tearDown" is-config="true" duration-ms="1242" started-at="2022-11-07T18:58:47 IST" finished-at="2022-11-07T18:58:48 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_001@38364841]" name="tearDown" is-config="true" duration-ms="30260" started-at="2022-11-08T12:50:54 IST" finished-at="2022-11-08T12:51:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -6,7 +6,9 @@ C:\Users\adars\workspace\POM_OCT_22\src\test\java\resources\Retry.java
 C:\Users\adars\workspace\POM_OCT_22\src\test\java\resources\Listeners.java
 C:\Users\adars\workspace\POM_OCT_22\src\test\java\testcases\BaseTest.java
 C:\Users\adars\workspace\POM_OCT_22\src\test\java\testcases\TC_HM_003_parameterize.java
+C:\Users\adars\workspace\POM_OCT_22\src\test\java\resources\jdbcconection.java
 C:\Users\adars\workspace\POM_OCT_22\src\test\java\pages\HomePage.java
+C:\Users\adars\workspace\POM_OCT_22\src\test\java\testcases\dbconnector.java
 C:\Users\adars\workspace\POM_OCT_22\src\test\java\pages\NewCarPage.java
 C:\Users\adars\workspace\POM_OCT_22\src\test\java\pages\BasePage.java
 C:\Users\adars\workspace\POM_OCT_22\src\test\java\testcases\TC_HM_003.java
