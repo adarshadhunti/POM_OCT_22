@@ -52,7 +52,7 @@ public class BaseTest {
     public String getScreenShotPath(String testMethodName, WebDriver driver) throws IOException {
         File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
-        String destinationFile = System.getProperty("user.dir") + "\\reports\\" + timeStamp + ".png";
+        String destinationFile = System.getProperty("user.dir") + "\\screenshots\\" + timeStamp + ".png";
         //String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testMethodName+".png";
         FileUtils.copyFile(source, new File(destinationFile));
         return destinationFile;

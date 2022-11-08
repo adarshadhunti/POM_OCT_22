@@ -44,7 +44,19 @@ public class Listeners extends BaseTest implements ITestListener {
     }
 
     public void onTestSkipped(ITestResult result) {
-        // TODO Auto-generated method stub
+        extentTest.get().fail(result.getThrowable());
+        String testMethodName = result.getMethod().getMethodName();
+        try {
+            driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        try {
+            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodName, driver), result.getMethod().getMethodName());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {

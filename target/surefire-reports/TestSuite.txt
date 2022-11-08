@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 31, Failures: 12, Errors: 0, Skipped: 5, Time elapsed: 280.171 sec <<< FAILURE!
-TC_HM_003_parameterizer(testcases.TC_HM_003_parameterize)  Time elapsed: 4.779 sec  <<< FAILURE!
+Tests run: 26, Failures: 12, Errors: 0, Skipped: 0, Time elapsed: 404.779 sec <<< FAILURE!
+TC_HM_003(testcases.TC_HM_003)  Time elapsed: 11.713 sec  <<< FAILURE!
 java.lang.AssertionError: Not matching expected [46] but found [49]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
@@ -10,9 +10,9 @@ java.lang.AssertionError: Not matching expected [46] but found [49]
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:1240)
 	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:39)
-	at testcases.TC_HM_003_parameterize.TC_HM_003_parameterizer(TC_HM_003_parameterize.java:18)
+	at testcases.TC_HM_003.TC_HM_003(TC_HM_003.java:20)
 
-TC_HM_003(testcases.TC_HM_003)  Time elapsed: 2.854 sec  <<< FAILURE!
+TC_HM_003_parameterizer(testcases.TC_HM_003_parameterize)  Time elapsed: 9.058 sec  <<< FAILURE!
 java.lang.AssertionError: Not matching expected [46] but found [49]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
@@ -20,9 +20,9 @@ java.lang.AssertionError: Not matching expected [46] but found [49]
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:1240)
 	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:39)
-	at testcases.TC_HM_003.TC_HM_003(TC_HM_003.java:18)
+	at testcases.TC_HM_003_parameterize.TC_HM_003_parameterizer(TC_HM_003_parameterize.java:20)
 
-TC_HM_003_parameterizer(testcases.TC_HM_003_parameterize)  Time elapsed: 10.546 sec  <<< FAILURE!
+TC_HM_003_parameterizer(testcases.TC_HM_003_parameterize)  Time elapsed: 9.605 sec  <<< FAILURE!
 java.lang.AssertionError: Not matching expected [46] but found [49]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
@@ -30,9 +30,9 @@ java.lang.AssertionError: Not matching expected [46] but found [49]
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:1240)
 	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:39)
-	at testcases.TC_HM_003_parameterize.TC_HM_003_parameterizer(TC_HM_003_parameterize.java:18)
+	at testcases.TC_HM_003_parameterize.TC_HM_003_parameterizer(TC_HM_003_parameterize.java:20)
 
-TC_HM_003_parameterize_excel_util1(testcases.TC_HM_003_parameterize_excel_util1)  Time elapsed: 20.599 sec  <<< FAILURE!
+TC_HM_003_parameterize_excel_util1(testcases.TC_HM_003_parameterize_excel_util1)  Time elapsed: 8.776 sec  <<< FAILURE!
 java.lang.AssertionError: Not matching expected [46] but found [49]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
@@ -40,9 +40,9 @@ java.lang.AssertionError: Not matching expected [46] but found [49]
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:1240)
 	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
-	at testcases.TC_HM_003_parameterize_excel_util1.TC_HM_003_parameterize_excel_util1(TC_HM_003_parameterize_excel_util1.java:21)
+	at testcases.TC_HM_003_parameterize_excel_util1.TC_HM_003_parameterize_excel_util1(TC_HM_003_parameterize_excel_util1.java:23)
 
-TC_HM_003_parameterize_excel_util1(testcases.TC_HM_003_parameterize_excel_util1)  Time elapsed: 0.463 sec  <<< FAILURE!
+TC_HM_003_parameterize_excel_util1(testcases.TC_HM_003_parameterize_excel_util1)  Time elapsed: 10.124 sec  <<< FAILURE!
 java.lang.AssertionError: Not matching expected [47] but found [49]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
@@ -50,19 +50,9 @@ java.lang.AssertionError: Not matching expected [47] but found [49]
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:1240)
 	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
-	at testcases.TC_HM_003_parameterize_excel_util1.TC_HM_003_parameterize_excel_util1(TC_HM_003_parameterize_excel_util1.java:21)
+	at testcases.TC_HM_003_parameterize_excel_util1.TC_HM_003_parameterize_excel_util1(TC_HM_003_parameterize_excel_util1.java:23)
 
-TC_HM_003_parameterize_dbfetch_util(testcases.dbconnector)  Time elapsed: 0.925 sec  <<< FAILURE!
-java.lang.AssertionError: Not matching expected [31] but found [49]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1240)
-	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
-	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
-
-TC_HM_003_parameterize_excel_util1(testcases.TC_HM_003_parameterize_excel_util1)  Time elapsed: 0.511 sec  <<< FAILURE!
+TC_HM_003_parameterize_excel_util1(testcases.TC_HM_003_parameterize_excel_util1)  Time elapsed: 8.956 sec  <<< FAILURE!
 java.lang.AssertionError: Not matching expected [48] but found [49]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
@@ -70,19 +60,9 @@ java.lang.AssertionError: Not matching expected [48] but found [49]
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:1240)
 	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
-	at testcases.TC_HM_003_parameterize_excel_util1.TC_HM_003_parameterize_excel_util1(TC_HM_003_parameterize_excel_util1.java:21)
+	at testcases.TC_HM_003_parameterize_excel_util1.TC_HM_003_parameterize_excel_util1(TC_HM_003_parameterize_excel_util1.java:23)
 
-TC_HM_003_parameterize_dbfetch_util(testcases.dbconnector)  Time elapsed: 21.403 sec  <<< FAILURE!
-java.lang.AssertionError: Not matching expected [32] but found [49]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1240)
-	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
-	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
-
-TC_HM_003_parameterize_excel_util1(testcases.TC_HM_003_parameterize_excel_util1)  Time elapsed: 14.237 sec  <<< FAILURE!
+TC_HM_003_parameterize_excel_util1(testcases.TC_HM_003_parameterize_excel_util1)  Time elapsed: 9.37 sec  <<< FAILURE!
 java.lang.AssertionError: Not matching expected [50] but found [49]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
@@ -90,19 +70,9 @@ java.lang.AssertionError: Not matching expected [50] but found [49]
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:1240)
 	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
-	at testcases.TC_HM_003_parameterize_excel_util1.TC_HM_003_parameterize_excel_util1(TC_HM_003_parameterize_excel_util1.java:21)
+	at testcases.TC_HM_003_parameterize_excel_util1.TC_HM_003_parameterize_excel_util1(TC_HM_003_parameterize_excel_util1.java:23)
 
-TC_HM_003_parameterize_dbfetch_util(testcases.dbconnector)  Time elapsed: 8.112 sec  <<< FAILURE!
-java.lang.AssertionError: Not matching expected [28] but found [49]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:1240)
-	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
-	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
-
-TC_HM_003_parameterize_dbfetch_util(testcases.dbconnector)  Time elapsed: 8.092 sec  <<< FAILURE!
+TC_HM_003_parameterize_dbfetch_util(testcases.dbconnector)  Time elapsed: 8.846 sec  <<< FAILURE!
 java.lang.AssertionError: Not matching expected [31] but found [49]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
@@ -110,9 +80,39 @@ java.lang.AssertionError: Not matching expected [31] but found [49]
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:1240)
 	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
-	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:20)
 
-TC_HM_003_parameterize_dbfetch_util(testcases.dbconnector)  Time elapsed: 9.409 sec  <<< FAILURE!
+TC_HM_003_parameterize_dbfetch_util(testcases.dbconnector)  Time elapsed: 15.764 sec  <<< FAILURE!
+java.lang.AssertionError: Not matching expected [32] but found [49]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:20)
+
+TC_HM_003_parameterize_dbfetch_util(testcases.dbconnector)  Time elapsed: 8.707 sec  <<< FAILURE!
+java.lang.AssertionError: Not matching expected [28] but found [49]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:20)
+
+TC_HM_003_parameterize_dbfetch_util(testcases.dbconnector)  Time elapsed: 9.979 sec  <<< FAILURE!
+java.lang.AssertionError: Not matching expected [31] but found [49]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
+	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:20)
+
+TC_HM_003_parameterize_dbfetch_util(testcases.dbconnector)  Time elapsed: 8.95 sec  <<< FAILURE!
 java.lang.AssertionError: Not matching expected [35] but found [49]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
@@ -120,5 +120,5 @@ java.lang.AssertionError: Not matching expected [35] but found [49]
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:1240)
 	at pages.UsedCarPage.verifynoofbrands(UsedCarPage.java:43)
-	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:19)
+	at testcases.dbconnector.TC_HM_003_parameterize_dbfetch_util(dbconnector.java:20)
 

@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="resources.Listeners"/>
     </listeners>
-    <test verbose="2" preserve-order="true" name = "Parallel Tests" parallel = "methods">
+    <test verbose="2" preserve-order="true" name = "Parallel Tests">
         <!--
     parallel="classes">-->
         <classes>
