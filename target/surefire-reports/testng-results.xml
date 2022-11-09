@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="11238" started-at="2022-11-09T19:13:41 IST" finished-at="2022-11-09T19:13:52 IST">
+    <groups>
+    </groups>
+    <test name="Parallel Tests" duration-ms="11238" started-at="2022-11-09T19:13:41 IST" finished-at="2022-11-09T19:13:52 IST">
+      <class name="testcases.TC_HM_002">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_002@58c1c010]" name="setup" is-config="true" duration-ms="6151" started-at="2022-11-09T19:13:41 IST" finished-at="2022-11-09T19:13:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_HM_002()[pri:0, instance:testcases.TC_HM_002@58c1c010]" name="TC_HM_002" duration-ms="4844" started-at="2022-11-09T19:13:47 IST" finished-at="2022-11-09T19:13:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_002 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_002@58c1c010]" name="tearDown" is-config="true" duration-ms="209" started-at="2022-11-09T19:13:52 IST" finished-at="2022-11-09T19:13:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC_HM_002 -->
+      <class name="testcases.TC_HM_001">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_001@6c3f5566]" name="setup" is-config="true" duration-ms="6151" started-at="2022-11-09T19:13:41 IST" finished-at="2022-11-09T19:13:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC_HM_001()[pri:0, instance:testcases.TC_HM_001@6c3f5566]" name="TC_HM_001" duration-ms="3063" started-at="2022-11-09T19:13:47 IST" finished-at="2022-11-09T19:13:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_HM_001 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_001@6c3f5566]" name="tearDown" is-config="true" duration-ms="315" started-at="2022-11-09T19:13:50 IST" finished-at="2022-11-09T19:13:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC_HM_001 -->
+    </test> <!-- Parallel Tests -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

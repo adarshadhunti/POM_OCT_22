@@ -91,8 +91,8 @@ public class BasePage {
         js.executeScript("arguments[0].scrollIntoView();", element1);
         waitForvisibilty(driver, element1);
         element1.click();
-
     }
+
 
     public static void selectBYindex(WebDriver driver, WebElement element, int index) {
         waitForvisibilty(driver, element);

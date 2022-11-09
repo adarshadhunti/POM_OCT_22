@@ -3,11 +3,13 @@ package testcases;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.xml.DOMConfigurator;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pages.BasePage;
@@ -27,16 +29,28 @@ public class BaseTest {
 
     @BeforeMethod
     public void setup() {
-        String browser = BasePage.getvalue("browser");
+        String browser;
+
+        if(System.getProperty("browser")!=null)
+        {
+            browser=System.getProperty("browser");
+        }
+        else {
+            browser = BasePage.getvalue("browser");
+        }
         if (browser.contains("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
-        } else if (BasePage.getvalue("browser").equalsIgnoreCase("firefox")) {
+        } else if (browser.contains("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
         }
+        else if (browser.contains("InternetExplorerDriver")) {
+            WebDriverManager.iedriver().setup();
+            driver = new InternetExplorerDriver();
+        }
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
         driver.get(BasePage.getvalue("url"));
     }
 
@@ -56,6 +70,10 @@ public class BaseTest {
         //String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testMethodName+".png";
         FileUtils.copyFile(source, new File(destinationFile));
         return destinationFile;
+    }
+
+    public static void zoomcorrction(WebDriver driver) {
+
     }
 }
 
