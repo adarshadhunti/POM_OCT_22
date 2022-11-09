@@ -10,7 +10,6 @@
         <classes>
             <class name="testcases.TC_HM_001"/>
             <class name="testcases.TC_HM_002"/>
-            <class name="testcases.TC_HM_003"/>
         </classes>
     </test>
 </suite>

@@ -1,5 +1,6 @@
 pages\BasePage.class
 testcases\dbconnector.class
+resources\updatedb.class
 testcases\HelloWorld.class
 testcases\TC_HM_002.class
 pages\HomePage.class
@@ -14,6 +15,7 @@ testcases\TC_HM_003_parameterize_excel.class
 pages\UsedCarPage.class
 testcases\TC_HM_003_parameterize_excel_util1.class
 resources\Retry.class
+testcases\dbupdater.class
 testcases\TC_HM_001.class
 testcases\TC_HM_003_parameterize.class
 testcases\TC_HM_003_parameterize_excel_util.class
