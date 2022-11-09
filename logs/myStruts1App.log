@@ -1923,3 +1923,33 @@
 2022-11-08 19:42:40 INFO  BasePage:84 - C:\Users\adars\workspace\POM_OCT_22\screenshots\2022.11.08.19.42.40.png
 2022-11-08 19:42:44 INFO  BasePage:69 - Waiting for the elementHyderabad, Telangana
 2022-11-08 19:42:44 INFO  BasePage:84 - C:\Users\adars\workspace\POM_OCT_22\screenshots\2022.11.08.19.42.44.png
+2022-11-09 08:31:03 INFO  BasePage:49 - Hello
+2022-11-09 08:31:03 INFO  BasePage:51 - Sample info message
+2022-11-09 08:31:03 WARN  BasePage:52 - Sample warn message
+2022-11-09 08:31:03 ERROR BasePage:53 - Sample error message
+2022-11-09 08:31:03 FATAL BasePage:54 - Sample fatal message
+2022-11-09 08:31:03 INFO  BasePage:49 - Hello
+2022-11-09 08:31:03 INFO  BasePage:51 - Sample info message
+2022-11-09 08:31:03 WARN  BasePage:52 - Sample warn message
+2022-11-09 08:31:03 ERROR BasePage:53 - Sample error message
+2022-11-09 08:31:03 FATAL BasePage:54 - Sample fatal message
+2022-11-09 08:31:58 INFO  BasePage:159 - [Bangalore, 49]
+2022-11-09 08:31:58 INFO  BasePage:159 - [Mumbai, 49]
+2022-11-09 08:31:58 INFO  BasePage:159 - [Chennai, 49]
+2022-11-09 08:31:58 INFO  BasePage:159 - [Hyderabad, 49]
+2022-11-09 08:31:58 INFO  BasePage:159 - [Delhi, 49]
+2022-11-09 08:45:31 INFO  BasePage:49 - Hello
+2022-11-09 08:45:31 INFO  BasePage:51 - Sample info message
+2022-11-09 08:45:31 WARN  BasePage:52 - Sample warn message
+2022-11-09 08:45:31 ERROR BasePage:53 - Sample error message
+2022-11-09 08:45:31 FATAL BasePage:54 - Sample fatal message
+2022-11-09 08:45:31 INFO  BasePage:49 - Hello
+2022-11-09 08:45:31 INFO  BasePage:51 - Sample info message
+2022-11-09 08:45:31 WARN  BasePage:52 - Sample warn message
+2022-11-09 08:45:31 ERROR BasePage:53 - Sample error message
+2022-11-09 08:45:31 FATAL BasePage:54 - Sample fatal message
+2022-11-09 08:46:25 INFO  BasePage:159 - [Bangalore, 49]
+2022-11-09 08:46:25 INFO  BasePage:159 - [Mumbai, 49]
+2022-11-09 08:46:25 INFO  BasePage:159 - [Chennai, 49]
+2022-11-09 08:46:25 INFO  BasePage:159 - [Hyderabad, 49]
+2022-11-09 08:46:25 INFO  BasePage:159 - [Delhi, 49]

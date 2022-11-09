@@ -1,11 +1,12 @@
 package testcases;
 
-import resources.updatedb;
+import resources.jdbcconection;
 import java.sql.SQLException;
 
 public class dbupdater {
     public static void main(String[] args) throws SQLException {
 
-        updatedb.DBupdate("cities","delhi","mysore");
+        jdbcconection.DBupdate("cities","mysore","delhi");
+        jdbcconection.DBinsert("cities","Haryana","48");
     }
 }

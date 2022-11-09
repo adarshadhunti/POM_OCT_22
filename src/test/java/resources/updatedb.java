@@ -11,7 +11,7 @@ public class updatedb {
         String port = BasePage.getvalue("dbport");
         String username = BasePage.getvalue("dbuser");
         String password = BasePage.getvalue("dbpassword");
-        Connection con = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/sampledb", "root", "root123");
+        Connection con = DriverManager.getConnection("jdbc:mysql://" + host + ":" + port + "/sampledb", username, password);
         Statement s = con.createStatement();
         String staments="update "+table+" set city= '" +tocity+"' where city= '"+fromcity+"'";
         System.out.println(staments);

@@ -53,12 +53,10 @@ public class HomePage extends BasePage {
 
     public void searchBasedOnCity(String city) throws IOException {
         searchTextField.sendKeys(city);
-        waitForvisibilty(driver, searchButton);
         click(driver, searchButton);
     }
 
     public void navigateToUsedCar() throws IOException {
-        sleep(2000);
         click(driver, usedButton);
     }
 }
