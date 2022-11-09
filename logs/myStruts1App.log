@@ -1998,3 +1998,18 @@
 2022-11-09 09:18:49 INFO  BasePage:159 - [Chennai, 49]
 2022-11-09 09:18:49 INFO  BasePage:159 - [Hyderabad, 49]
 2022-11-09 09:18:49 INFO  BasePage:159 - [Delhi, 49]
+2022-11-09 09:22:48 INFO  BasePage:49 - Hello
+2022-11-09 09:22:48 INFO  BasePage:51 - Sample info message
+2022-11-09 09:22:48 WARN  BasePage:52 - Sample warn message
+2022-11-09 09:22:48 ERROR BasePage:53 - Sample error message
+2022-11-09 09:22:48 FATAL BasePage:54 - Sample fatal message
+2022-11-09 09:22:48 INFO  BasePage:49 - Hello
+2022-11-09 09:22:48 INFO  BasePage:51 - Sample info message
+2022-11-09 09:22:48 WARN  BasePage:52 - Sample warn message
+2022-11-09 09:22:48 ERROR BasePage:53 - Sample error message
+2022-11-09 09:22:48 FATAL BasePage:54 - Sample fatal message
+2022-11-09 09:23:41 INFO  BasePage:159 - [Bangalore, 49]
+2022-11-09 09:23:41 INFO  BasePage:159 - [Mumbai, 49]
+2022-11-09 09:23:41 INFO  BasePage:159 - [Chennai, 49]
+2022-11-09 09:23:41 INFO  BasePage:159 - [Hyderabad, 49]
+2022-11-09 09:23:41 INFO  BasePage:159 - [Delhi, 49]
