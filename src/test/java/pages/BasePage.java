@@ -67,8 +67,9 @@ public class BasePage {
     public static void click(WebDriver driver, WebElement element) throws IOException {
         waitForvisibilty(driver, element);
         BaseTest br = new BaseTest();
-        //log1.info(br.getScreenShotPath("click", driver));
+        log1.info(br.getScreenShotPath("click", driver));
         Actions actions = new Actions(driver);
+        actions.moveToElement(element).build().perform();
         actions.click(element).build().perform();
     }
 
@@ -92,7 +93,6 @@ public class BasePage {
         waitForvisibilty(driver, element1);
         element1.click();
     }
-
 
     public static void selectBYindex(WebDriver driver, WebElement element, int index) {
         waitForvisibilty(driver, element);

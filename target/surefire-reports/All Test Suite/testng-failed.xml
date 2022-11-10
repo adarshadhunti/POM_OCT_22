@@ -6,20 +6,20 @@
   </listeners>
   <test thread-count="5" verbose="0" name="Parallel Tests(failed)" parallel="methods">
     <classes>
-      <class name="testcases.TC_HM_001">
-        <methods>
-          <include name="TC_HM_001"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testcases.TC_HM_001 -->
-      <class name="testcases.TC_HM_002">
+      <class name="testcases.dbconnector">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="TC_HM_002"/>
+          <include name="TC_HM_003_parameterize_dbfetch_util" invocation-numbers="0 1 2 3 4"/>
         </methods>
-      </class> <!-- testcases.TC_HM_002 -->
+      </class> <!-- testcases.dbconnector -->
+      <class name="testcases.TC_HM_003_parameterize_excel_util1">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="TC_HM_003_parameterize_excel_util1" invocation-numbers="0 1 2 3 4"/>
+        </methods>
+      </class> <!-- testcases.TC_HM_003_parameterize_excel_util1 -->
     </classes>
   </test> <!-- Parallel Tests(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

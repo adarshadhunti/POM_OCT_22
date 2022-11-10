@@ -1,35 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="All Test Suite" duration-ms="11238" started-at="2022-11-09T19:13:41 IST" finished-at="2022-11-09T19:13:52 IST">
+  <suite name="All Test Suite" duration-ms="341207" started-at="2022-11-09T20:33:17 IST" finished-at="2022-11-09T20:38:58 IST">
     <groups>
     </groups>
-    <test name="Parallel Tests" duration-ms="11238" started-at="2022-11-09T19:13:41 IST" finished-at="2022-11-09T19:13:52 IST">
-      <class name="testcases.TC_HM_002">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_002@58c1c010]" name="setup" is-config="true" duration-ms="6151" started-at="2022-11-09T19:13:41 IST" finished-at="2022-11-09T19:13:47 IST">
+    <test name="Parallel Tests" duration-ms="341207" started-at="2022-11-09T20:33:17 IST" finished-at="2022-11-09T20:38:58 IST">
+      <class name="testcases.TC_HM_003_parameterize_excel_util1">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util1@6b53e23f]" name="setup" is-config="true" duration-ms="4008" started-at="2022-11-09T20:38:29 IST" finished-at="2022-11-09T20:38:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="TC_HM_002()[pri:0, instance:testcases.TC_HM_002@58c1c010]" name="TC_HM_002" duration-ms="4844" started-at="2022-11-09T19:13:47 IST" finished-at="2022-11-09T19:13:52 IST">
+      </class> <!-- testcases.TC_HM_003_parameterize_excel_util1 -->
+      <class name="testcases.TC_HM_003_parameterize">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize@731f8236]" name="setup" is-config="true" duration-ms="6456" started-at="2022-11-09T20:33:17 IST" finished-at="2022-11-09T20:33:23 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_HM_002 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_002@58c1c010]" name="tearDown" is-config="true" duration-ms="209" started-at="2022-11-09T19:13:52 IST" finished-at="2022-11-09T19:13:52 IST">
+        </test-method> <!-- setup -->
+      </class> <!-- testcases.TC_HM_003_parameterize -->
+      <class name="testcases.TC_HM_003_parameterize_excel_util">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize_excel_util@1dd92fe2]" name="setup" is-config="true" duration-ms="3320" started-at="2022-11-09T20:33:24 IST" finished-at="2022-11-09T20:33:27 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- setup -->
+      </class> <!-- testcases.TC_HM_003_parameterize_excel_util -->
+      <class name="testcases.TC_HM_003_parameterize_excel">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003_parameterize_excel@255b53dc]" name="setup" is-config="true" duration-ms="5279" started-at="2022-11-09T20:33:18 IST" finished-at="2022-11-09T20:33:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- testcases.TC_HM_003_parameterize_excel -->
+      <class name="testcases.dbconnector">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.dbconnector@64d2d351]" name="setup" is-config="true" duration-ms="3086" started-at="2022-11-09T20:38:34 IST" finished-at="2022-11-09T20:38:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- testcases.dbconnector -->
+      <class name="testcases.TC_HM_003">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_003@226a82c4]" name="setup" is-config="true" duration-ms="6364" started-at="2022-11-09T20:33:17 IST" finished-at="2022-11-09T20:33:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- testcases.TC_HM_003 -->
+      <class name="testcases.TC_HM_002">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_002@7fe8ea47]" name="setup" is-config="true" duration-ms="6530" started-at="2022-11-09T20:33:17 IST" finished-at="2022-11-09T20:33:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
       </class> <!-- testcases.TC_HM_002 -->
       <class name="testcases.TC_HM_001">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_001@6c3f5566]" name="setup" is-config="true" duration-ms="6151" started-at="2022-11-09T19:13:41 IST" finished-at="2022-11-09T19:13:47 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC_HM_001@6385cb26]" name="setup" is-config="true" duration-ms="5788" started-at="2022-11-09T20:33:17 IST" finished-at="2022-11-09T20:33:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="TC_HM_001()[pri:0, instance:testcases.TC_HM_001@6c3f5566]" name="TC_HM_001" duration-ms="3063" started-at="2022-11-09T19:13:47 IST" finished-at="2022-11-09T19:13:50 IST">
+        <test-method status="PASS" signature="TC_HM_001()[pri:0, instance:testcases.TC_HM_001@6385cb26]" name="TC_HM_001" duration-ms="956" started-at="2022-11-09T20:33:22 IST" finished-at="2022-11-09T20:33:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_HM_001 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_001@6c3f5566]" name="tearDown" is-config="true" duration-ms="315" started-at="2022-11-09T19:13:50 IST" finished-at="2022-11-09T19:13:50 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC_HM_001@6385cb26]" name="tearDown" is-config="true" duration-ms="292" started-at="2022-11-09T20:33:23 IST" finished-at="2022-11-09T20:33:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

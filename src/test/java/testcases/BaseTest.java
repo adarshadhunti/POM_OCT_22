@@ -8,6 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
@@ -17,6 +18,7 @@ import pages.BasePage;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -39,8 +41,14 @@ public class BaseTest {
             browser = BasePage.getvalue("browser");
         }
         if (browser.contains("chrome")) {
+            ChromeOptions opt=new ChromeOptions();
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            if(browser.contains("headless"))
+            {
+                opt.addArguments("headless");
+            }
+
+            driver = new ChromeDriver(opt);
         } else if (browser.contains("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
@@ -65,15 +73,14 @@ public class BaseTest {
      */
     public String getScreenShotPath(String testMethodName, WebDriver driver) throws IOException {
         File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
-        String destinationFile = System.getProperty("user.dir") + "\\screenshots\\" + timeStamp + ".png";
+        String base64Screenshot ="data:image/png;base64," + ((TakesScreenshot) Objects.requireNonNull(driver)).getScreenshotAs(OutputType.BASE64);
+
+        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss.sss").format(new java.util.Date());
+        String destinationFile = System.getProperty("user.dir") + "\\screenshots\\" + timeStamp + ".jpg";
         //String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testMethodName+".png";
         FileUtils.copyFile(source, new File(destinationFile));
-        return destinationFile;
+        return base64Screenshot;
     }
 
-    public static void zoomcorrction(WebDriver driver) {
-
-    }
 }
 

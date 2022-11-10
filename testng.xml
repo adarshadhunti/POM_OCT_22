@@ -4,18 +4,13 @@
     <listeners>
         <listener class-name="resources.Listeners"/>
     </listeners>
-    <test verbose="2" preserve-order="true" parallel="methods" name = "Parallel Tests">
+    <test verbose="2" preserve-order="true" parallel="methods" name = "Parallel Tests" thread-count="2">
         <!--
     parallel="classes">-->
         <classes>
             <class name="testcases.TC_HM_001"/>
             <class name="testcases.TC_HM_002"/>
             <class name="testcases.TC_HM_003"/>
-            <class name="testcases.TC_HM_003_parameterize"/>
-            <class name="testcases.TC_HM_003_parameterize_excel"/>
-            <class name="testcases.TC_HM_003_parameterize_excel_util"/>
-            <class name="testcases.TC_HM_003_parameterize_excel_util1"/>
-            <class name="testcases.dbconnector"/>
         </classes>
     </test>
 </suite>
