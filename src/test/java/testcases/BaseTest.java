@@ -79,6 +79,17 @@ public class BaseTest {
         String destinationFile = System.getProperty("user.dir") + "\\screenshots\\" + timeStamp + ".jpg";
         //String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testMethodName+".png";
         FileUtils.copyFile(source, new File(destinationFile));
+        return destinationFile;
+    }
+
+    public String getScreenShotPath1(String testMethodName, WebDriver driver) throws IOException {
+        File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        String base64Screenshot ="data:image/png;base64," + ((TakesScreenshot) Objects.requireNonNull(driver)).getScreenshotAs(OutputType.BASE64);
+
+        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss.sss").format(new java.util.Date());
+        String destinationFile = System.getProperty("user.dir") + "\\screenshots\\" + timeStamp + ".jpg";
+        //String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testMethodName+".png";
+        FileUtils.copyFile(source, new File(destinationFile));
         return base64Screenshot;
     }
 
