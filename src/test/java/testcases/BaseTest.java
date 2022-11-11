@@ -31,15 +31,8 @@ public class BaseTest {
 
     @BeforeMethod
     public void setup() {
-        String browser;
+        String browser = System.getProperty("browser")!=null ? System.getProperty("browser") : BasePage.getvalue("browser");
 
-        if(System.getProperty("browser")!=null)
-        {
-            browser=System.getProperty("browser");
-        }
-        else {
-            browser = BasePage.getvalue("browser");
-        }
         if (browser.contains("chrome")) {
             ChromeOptions opt=new ChromeOptions();
             WebDriverManager.chromedriver().setup();
@@ -47,7 +40,6 @@ public class BaseTest {
             {
                 opt.addArguments("headless");
             }
-
             driver = new ChromeDriver(opt);
         } else if (browser.contains("firefox")) {
             WebDriverManager.firefoxdriver().setup();
@@ -74,7 +66,6 @@ public class BaseTest {
     public String getScreenShotPath(String testMethodName, WebDriver driver) throws IOException {
         File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String base64Screenshot ="data:image/png;base64," + ((TakesScreenshot) Objects.requireNonNull(driver)).getScreenshotAs(OutputType.BASE64);
-
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss.sss").format(new java.util.Date());
         String destinationFile = System.getProperty("user.dir") + "\\screenshots\\" + timeStamp + ".jpg";
         //String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testMethodName+".png";
