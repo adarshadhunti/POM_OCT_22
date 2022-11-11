@@ -4,12 +4,12 @@
     <listeners>
         <listener class-name="resources.Listeners"/>
     </listeners>
-    <test verbose="2" preserve-order="true" name = "Parallel Tests1" parallel = "methods" thread-count = "2">
+    <test verbose="2" preserve-order="true" name = "Parallel Tests">
         <!--
     parallel="classes">-->
         <classes>
-            <class name="testcases.TC_HM_001"/>
             <class name="testcases.TC_HM_002"/>
+
         </classes>
     </test>
 </suite>
