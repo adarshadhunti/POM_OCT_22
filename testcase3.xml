@@ -8,12 +8,7 @@
         <!--
     parallel="classes">-->
         <classes>
-            <class name="testcases.TC_HM_003"/>
-            <class name="testcases.TC_HM_003_parameterize"/>
-            <class name="testcases.TC_HM_003_parameterize_excel"/>
             <class name="testcases.TC_HM_003_parameterize_excel_util"/>
-            <class name="testcases.TC_HM_003_parameterize_excel_util1"/>
-            <class name="testcases.dbconnector"/>
         </classes>
     </test>
 </suite>
