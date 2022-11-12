@@ -69,7 +69,7 @@ public class BasePage {
         BaseTest br = new BaseTest();
         log1.info(br.getScreenShotPath("click", driver));
         Actions actions = new Actions(driver);
-        scrollIntoView(driver,element);
+        //scrollIntoView(driver,element);
         waitForvisibilty(driver, element);
         //actions.moveToElement(element).build().perform();
         actions.click(element).build().perform();
