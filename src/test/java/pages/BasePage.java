@@ -65,12 +65,11 @@ public class BasePage {
     }
 
     public static void click(WebDriver driver, WebElement element) throws IOException {
-        waitForele();
         waitForvisibilty(driver, element);
         BaseTest br = new BaseTest();
         log1.info(br.getScreenShotPath("click", driver));
         Actions actions = new Actions(driver);
-          actions.click(element).build().perform();
+        actions.click(element).build().perform();
     }
 
     public static void rightClick(WebDriver driver, WebElement element) {
