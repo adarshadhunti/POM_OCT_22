@@ -45,7 +45,7 @@ public class BasePage {
 
     public static void waitForele() {
         try {
-            long timeout = 3000;
+            long timeout = 150;
             Thread.sleep(timeout);
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -65,14 +65,12 @@ public class BasePage {
     }
 
     public static void click(WebDriver driver, WebElement element) throws IOException {
-        //waitForvisibilty(driver, element);
+        waitForele();
+        waitForvisibilty(driver, element);
         BaseTest br = new BaseTest();
         log1.info(br.getScreenShotPath("click", driver));
         Actions actions = new Actions(driver);
-        //scrollIntoView(driver,element);
-        waitForvisibilty(driver, element);
-        //actions.moveToElement(element).build().perform();
-        actions.click(element).build().perform();
+          actions.click(element).build().perform();
     }
 
     public static void rightClick(WebDriver driver, WebElement element) {
