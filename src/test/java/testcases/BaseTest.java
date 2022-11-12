@@ -30,7 +30,7 @@ public class BaseTest {
     public WebDriver driver = null;
 
     @BeforeMethod
-    public void setup() {
+    public void setup() throws InterruptedException {
         String browser = System.getProperty("browser")!=null ? System.getProperty("browser") : BasePage.getvalue("browser");
 
         if (browser.contains("chrome")) {
@@ -44,6 +44,7 @@ public class BaseTest {
         } else if (browser.contains("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
+            Thread.sleep(300);
         }
         else if (browser.contains("InternetExplorerDriver")) {
             WebDriverManager.iedriver().setup();

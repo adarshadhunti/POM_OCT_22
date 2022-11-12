@@ -65,7 +65,7 @@ public class BasePage {
     }
 
     public static void click(WebDriver driver, WebElement element) throws IOException {
-        waitForele();
+        //waitForele();
         waitForvisibilty(driver, element);
         BaseTest br = new BaseTest();
         log1.info(br.getScreenShotPath("click", driver));
