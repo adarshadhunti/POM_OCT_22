@@ -35,19 +35,19 @@ public class BaseTest {
 
         if (browser.contains("chrome")) {
             ChromeOptions opt=new ChromeOptions();
-            WebDriverManager.chromedriver().create();
+            WebDriverManager.chromedriver().setup();
             if(browser.contains("headless"))
             {
                 opt.addArguments("headless");
             }
             driver = new ChromeDriver(opt);
         } else if (browser.contains("firefox")) {
-            WebDriverManager.firefoxdriver().create();
+            WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
             Thread.sleep(300);
         }
         else if (browser.contains("InternetExplorerDriver")) {
-            WebDriverManager.iedriver().create();
+            WebDriverManager.iedriver().setup();
             driver = new InternetExplorerDriver();
         }
         driver.manage().window().maximize();
