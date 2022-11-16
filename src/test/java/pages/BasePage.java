@@ -126,6 +126,22 @@ public class BasePage {
         return value;
     }
 
+    public static String geteid() throws IOException
+    {
+        String path = System.getProperty("user.dir") + File.separator + "doc.properties";
+        FileInputStream fis = new FileInputStream(path);
+        Properties pr = new Properties();
+        pr.load(fis);
+        int eid=Integer.parseInt(pr.getProperty("doc"));
+        int eid1=eid++;
+        //System.out.println(pr.getProperty("doc")+1);
+        pr.setProperty("doc", String.valueOf(eid));
+        FileOutputStream fr = new FileOutputStream(path);
+        pr.store(fr, "Properties");
+        fr.close();
+        return "7841976"+eid1;
+     }
+
     public static void sleep(int seconds) {
         try {
             Thread.sleep(seconds);
