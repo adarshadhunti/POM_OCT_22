@@ -69,9 +69,9 @@ public class jdbcconection {
         jd.password = BasePage.getvalue("dbpassword");
         Connection con = DriverManager.getConnection("jdbc:mysql://" + jd.host + ":" + jd.port + "/sampledb", jd.username, jd.password);
         Statement s = con.createStatement();
-        String staments="insert into "+table+ " values(\""+city+"\", \""+noofcars+"\""+")";
-        System.out.println(staments);
-        s.executeUpdate(staments);
+        String staments12="insert into "+table+ " values(\""+city+"\", \""+noofcars+"\""+")";
+        System.out.println(staments12);
+        s.executeUpdate(staments12);
         con.close();
     }
 
