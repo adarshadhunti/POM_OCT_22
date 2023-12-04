@@ -1,17 +1,13 @@
 package testcases;
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.UsedCarPage;
 import resources.ExcelUtil;
 import resources.Retry;
-
 import java.io.IOException;
 
-
 public class TC_HM_003_parameterize_excel_util1 extends BaseTest {
-//adarsh code
     @Test(dataProvider = "getData4")
     public void TC_HM_003_parameterize_excel_util1(String city, String no_of_brands) throws IOException {
         //String city = BasePage.generateCity();
@@ -21,19 +17,11 @@ public class TC_HM_003_parameterize_excel_util1 extends BaseTest {
         UsedCarPage ucp = new UsedCarPage(driver);
         ucp.enterYourCity(city);
         ucp.verifynoofbrands(no_of_brands);
-        //hello112
-        //RAMU456712
-        //Somu
-        //Bhima
-        //sandeepa
-        //adarsh
     }
 
     @DataProvider
     public Object[][] getData4() throws Exception {
-        //hi
         String Sheetname = "Sheet2";
         return ExcelUtil.Excelread(Sheetname);
-
     }
 }
