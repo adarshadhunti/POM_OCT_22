@@ -1,8 +1,6 @@
 package pages;
 
 import com.github.javafaker.Faker;
-import org.apache.log4j.*;
-import org.apache.log4j.xml.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.*;
 import org.openqa.selenium.support.*;
@@ -11,17 +9,17 @@ import org.testng.Assert;
 import testcases.BaseTest;
 import java.io.*;
 import java.util.*;
+import java.util.logging.Logger;
 
 public class BasePage {
     public static Logger log1 = Logger.getLogger(BasePage.class.getName());
-    public static int timeout = 300;
+    public static int timeout = 3000;
     public WebDriver driver;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
-        DOMConfigurator.configure("log4j.xml");
-    }
+           }
 
     public static void accept(WebDriver driver) {
         Alert alert = driver.switchTo().alert();
@@ -54,8 +52,8 @@ public class BasePage {
 
     public static void waitForvisibilty(WebDriver driver, WebElement element) {
         log1.info("Waiting for the element" + element.getText());
-        WebDriverWait wait = new WebDriverWait(driver, timeout);
-        wait.until(ExpectedConditions.visibilityOf(element));
+        //WebDriverWait wait = new WebDriverWait(driver, timeout);
+       // wait.until(ExpectedConditions.visibilityOf(element));
     }
 
     public static void mouseHover(WebDriver driver, WebElement elementsByName) {
