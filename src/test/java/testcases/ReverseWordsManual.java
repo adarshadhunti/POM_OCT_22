@@ -24,6 +24,6 @@ public class ReverseWordsManual {
         String input = "Java is fun";
         String output = reverseEachWordManual(input);
         System.out.println("Original sentence: " + input);
-        System.out.println("Reversed words: " + output);
+        //System.out.println("Reversed words: " + output);
     }
 }
