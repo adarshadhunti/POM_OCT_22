@@ -26,6 +26,6 @@ public class ReverseWordsManual {
         System.out.println("Original sentence: " + input);
         //System.out.println("Reversed words: " + output);
         System.out.println("Originall sentence: " + input);
-
+        //NOTESREMOVED
     }
 }
