@@ -25,5 +25,7 @@ public class ReverseWordsManual {
         String output = reverseEachWordManual(input);
         System.out.println("Original sentence: " + input);
         //System.out.println("Reversed words: " + output);
+        System.out.println("Originall sentence: " + input);
+
     }
 }
