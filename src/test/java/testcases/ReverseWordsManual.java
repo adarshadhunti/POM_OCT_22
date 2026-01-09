@@ -30,5 +30,7 @@ public class ReverseWordsManual {
     
 //Hello
         //NOTESREMOVED
+
+        // Expected output: "avaJ si nuf"
     }
 }
