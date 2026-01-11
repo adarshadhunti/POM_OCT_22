@@ -24,6 +24,7 @@ public class ReverseWordsManual {
         String input = "Java is fun";
         String output = reverseEachWordManual(input);
         System.out.println("Original sentence: " + input);
+<<<<<<< Updated upstream
         //System.out.println("Reversed words: " + output);
         System.out.println("Originall sentence: " + input);
         //Note
@@ -33,4 +34,8 @@ public class ReverseWordsManual {
 
         // Expected output: "avaJ si nuf"
     }
+=======
+        System.out.println("Reversed words: " + output);
+        }
+>>>>>>> Stashed changes
 }
