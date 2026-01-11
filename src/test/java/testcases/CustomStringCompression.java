@@ -1,8 +1,6 @@
 package testcases;
 
 
-import freemarker.core.ReturnInstruction;
-
 public class CustomStringCompression {
 
     public static void main(String[] args) {
@@ -18,11 +16,9 @@ public class CustomStringCompression {
         int count=1;
         for (int i=1;i<=n;i++)
         {
-
             if (i<n && input.charAt(i)==input.charAt(i-1))
             {
                 count++;
-
             }
             else
             {
@@ -42,7 +38,6 @@ public class CustomStringCompression {
                 count=1;
             }
         }
-
         return compressed.toString();
     }
 }
