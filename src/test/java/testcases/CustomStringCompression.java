@@ -42,6 +42,5 @@ public class CustomStringCompression {
         //hel
         //Hello World
         //ramu
-        //rajesh
     }
 }
