@@ -20,7 +20,10 @@ public class collectiondemo {
                 }
                 // System.out.println(a[i]); //System.out.println(k);
                 if (k == 1)
-                    System.out.println(a[i] + "is unique number");
+                    System.out.println(a[i] + " is unique number ");
+                else {
+                    System.out.println(a[i] + " is repeated " + k + " times");
+                }
             }
         }
     }
