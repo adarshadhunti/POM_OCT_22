@@ -1,9 +1,5 @@
 package testcases;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
-
 public class Hashhmap {
     public static String Wordcount(String s) {
         //String s = "apple banana apple orange banana apple";
