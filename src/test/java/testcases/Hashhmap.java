@@ -15,6 +15,7 @@ public class Hashhmap {
             sb.append(reversedWord).append(" ");
             System.out.print(reversedWord);
         }
+        //Ramu
        return sb.toString().trim();
 /*        TreeMap<String, Integer> hm = new TreeMap<String, Integer>();
         for (String word : ss) {
