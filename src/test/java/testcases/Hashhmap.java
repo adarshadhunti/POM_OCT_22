@@ -18,15 +18,6 @@ public class Hashhmap {
             }
             sb.append(reversedWord).append(" ");
             System.out.print(reversedWord);
-            //lalala
-            //hello
-<<<<<<< Updated upstream
-            //nishanth
-            //keshava
-=======
-            //nis
->>>>>>> Stashed changes
-            //Darshan
         }
        return sb.toString().trim();
 
