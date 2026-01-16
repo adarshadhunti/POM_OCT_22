@@ -41,7 +41,7 @@ public class Hashhmap {
             else {
                 for(int i=0;i<=charrr-1;i++)
                 {
-                    System.out.print(entry.getKey());
+                    //System.out.print(entry.getKey());
                 }
             }
         }
