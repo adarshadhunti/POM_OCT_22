@@ -20,8 +20,12 @@ public class Hashhmap {
             System.out.print(reversedWord);
             //lalala
             //hello
+<<<<<<< Updated upstream
             //nishanth
             //keshava
+=======
+            //nis
+>>>>>>> Stashed changes
         }
        return sb.toString().trim();
 
