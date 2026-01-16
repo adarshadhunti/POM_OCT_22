@@ -16,7 +16,8 @@ public class Hashhmap {
             System.out.print(reversedWord);
         }
        return sb.toString().trim();
-        //Hkkkk
+        //Hkkkkkk
+        //jkukl
 /*        TreeMap<String, Integer> hm = new TreeMap<String, Integer>();
         for (String word : ss) {
             if (hm.containsKey(word)) {
