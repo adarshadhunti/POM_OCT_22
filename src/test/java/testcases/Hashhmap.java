@@ -18,7 +18,7 @@ public class Hashhmap {
             }
             sb.append(reversedWord).append(" ");
             System.out.print(reversedWord);
-            //here you can count the words as well if needed
+            //lalala
         }
        return sb.toString().trim();
 
