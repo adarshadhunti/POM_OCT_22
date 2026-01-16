@@ -17,7 +17,7 @@ public class Hashhmap {
                 reversedWord +=hh.charAt(i);
             }
             sb.append(reversedWord).append(" ");
-            //System.out.print(reversedWord);
+            System.out.print(reversedWord);
         }
        return sb.toString().trim();
 
