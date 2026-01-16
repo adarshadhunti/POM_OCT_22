@@ -20,7 +20,7 @@ public class Hashhmap {
             System.out.print(reversedWord);
             //lalala
             //hello
-            //hhhhh
+            //hhhhhh
         }
        return sb.toString().trim();
 
