@@ -12,30 +12,15 @@ public class ReverseWordsManual {
             for (int i = word.length() - 1; i >= 0; i--) {
                 reversedWord += word.charAt(i);
             }
-
             // Append the manually reversed word and a space
            reversedSentence.append(reversedWord).append(" ");
         }
-
         return reversedSentence.toString().trim();
     }
-
     public static void main(String[] args) {
         String input = "Java is fun";
         String output = reverseEachWordManual(input);
         System.out.println("Original sentence: " + input);
-<<<<<<< Updated upstream
-        //System.out.println("Reversed words: " + output);
-        System.out.println("Originall sentence: " + input);
-        //Note
-    
-//Hello
-        //NOTESREMOVED
-
-        // Expected output: "avaJ si nuf"
-    }
-=======
         System.out.println("Reversed words: " + output);
         }
->>>>>>> Stashed changes
 }
