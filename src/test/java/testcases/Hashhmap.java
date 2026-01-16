@@ -24,6 +24,7 @@ public class Hashhmap {
         //vasudeva
         //krishna
         //gopi
+        //buooo
 
 /*        TreeMap<String, Integer> hm = new TreeMap<String, Integer>();
         for (String word : ss) {
