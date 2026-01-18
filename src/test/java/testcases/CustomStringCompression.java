@@ -23,7 +23,6 @@ public class CustomStringCompression {
             else
             {
                 char c=input.charAt(i-1);
-
                 if(count ==2)
                 {
                     compressed.append(c).append(2);
@@ -40,5 +39,4 @@ public class CustomStringCompression {
         }
         return compressed.toString();
     }
-    //HELLLOOO
 }
