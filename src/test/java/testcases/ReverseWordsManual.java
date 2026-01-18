@@ -10,7 +10,7 @@ public class ReverseWordsManual {
             String reversedWord = "";
             // Loop through the word from the last character to the first
             for (int i = word.length() - 1; i >= 0; i--) {
-                reversedWord += word.charAt(i);
+                reversedWord = reversedWord + word.charAt(i);
             }
             // Append the manually reversed word and a space
            reversedSentence.append(reversedWord).append(" ");
