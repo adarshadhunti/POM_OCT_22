@@ -6,33 +6,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Linkss {
-    private static class LinkInfo {
-        final String href;
-        final String text;
-        final String outerHtml;
-
-        LinkInfo(String href, String text, String outerHtml) {
-            this.href = href;
-            this.text = text;
-            this.outerHtml = outerHtml;
-        }
-    }
-
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = WebDriverManager.chromedriver().create();
         driver.manage().timeouts().implicitlyWait(20, java.util.concurrent.TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("http://rahulshettyacademy.com/AutomationPractice/");
-
         List<WebElement> links = driver.findElements(By.tagName("a"));
-
         System.out.println("Total links: " + links.size());
-
         List<LinkInfo> linkInfos = new ArrayList<>();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         for (WebElement link : links) {
@@ -41,10 +25,10 @@ public class Linkss {
             String outer = "";
             try {
                 outer = (String) js.executeScript("return arguments[0].outerHTML;", link);
-            } catch (Exception ignored) { }
+            } catch (Exception ignored) {
+            }
             linkInfos.add(new LinkInfo(href, text, outer));
         }
-
         for (LinkInfo li : linkInfos) {
             if (li.href == null || li.href.trim().isEmpty()) {
                 System.out.println("Skipping link with no href. text: " + li.text + " html: " + li.outerHtml);
@@ -58,5 +42,17 @@ public class Linkss {
             }
         }
         driver.quit();
+    }
+
+    private static class LinkInfo {
+        final String href;
+        final String text;
+        final String outerHtml;
+
+        LinkInfo(String href, String text, String outerHtml) {
+            this.href = href;
+            this.text = text;
+            this.outerHtml = outerHtml;
+        }
     }
 }
