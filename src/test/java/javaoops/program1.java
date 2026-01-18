@@ -12,8 +12,10 @@ public class program1 {
             {
                 reverses+=rr.charAt(i);
             }
-            reverse.append(reverses).append(" ");
-        }
-        System.out.println(reverse.toString().trim());
+            reverse.append(reverses).append("%");
+         }
+        reverse.deleteCharAt(reverse.length()-1);
+        String finaloutput=reverse.toString().trim();
+        System.out.println(finaloutput);
     }
 }
