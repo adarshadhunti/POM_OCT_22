@@ -15,6 +15,7 @@ public class ReverseWordsManual {
             // Append the manually reversed word and a space
            reversedSentence.append(reversedWord).append(" ");
         }
+        //Trim the final sentence to remove any trailing space
         return reversedSentence.toString().trim();
     }
     public static void main(String[] args) {
