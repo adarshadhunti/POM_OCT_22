@@ -18,7 +18,7 @@ public class collectiondemo {
                         k++;
                     }
                 }
-                // System.out.println(a[i]); //System.out.println(k);
+                System.out.println(a[i]); //System.out.println(k);
                 if (k == 1)
                     System.out.println(a[i] + " is unique number ");
                 else {
@@ -27,5 +27,4 @@ public class collectiondemo {
             }
         }
     }
-
 }
