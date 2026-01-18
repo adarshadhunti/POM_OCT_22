@@ -1,10 +1,13 @@
 package testcases;
 
+import java.util.Map;
+import java.util.TreeMap;
+
 public class Hashhmap {
-    public static String Wordcount(String s) {
+    public static TreeMap<String, Integer> Wordcount(String s) {
         //String s = "apple banana apple orange banana apple";
         String[] ss = s.split(" ");
-        StringBuilder sb=new StringBuilder();
+/*        StringBuilder sb=new StringBuilder();
         for (String hh: ss)
         {
             String reversedWord = "";
@@ -15,8 +18,8 @@ public class Hashhmap {
             sb.append(reversedWord).append(" ");
             System.out.print(reversedWord);
         }
-       return sb.toString().trim();
-/*        TreeMap<String, Integer> hm = new TreeMap<String, Integer>();
+       return sb.toString().trim();*/
+      TreeMap<String, Integer> hm = new TreeMap<String, Integer>();
         for (String word : ss) {
             if (hm.containsKey(word)) {
                 hm.put(word, hm.get(word) + 1);
@@ -39,7 +42,7 @@ public class Hashhmap {
                 }
             }
         }
-        return hm;*/
+        return hm;
     }
 
     public static void main(String[] args) {
