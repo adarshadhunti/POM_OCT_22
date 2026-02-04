@@ -23,7 +23,5 @@ public class Anagrams {
         }
         /*System.out.println(anagramGroups.values());*/
         //SIMPLE1
-        //SIMPLE2
-        //SIMPLE3
     }
 }
