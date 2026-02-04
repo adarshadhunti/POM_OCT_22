@@ -22,8 +22,5 @@ public class Anagrams {
             System.out.println(group);
         }
         /*System.out.println(anagramGroups.values());*/
-        //SIMPLE1
-        //SIMPLE78
-        //SIMPLE2
     }
 }
