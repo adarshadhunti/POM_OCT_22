@@ -7,10 +7,10 @@ public class program1 {
         StringBuilder reverse=new StringBuilder();
         for(String rr: words)
         {
-            String reverses="";
+            StringBuilder reverses= new StringBuilder();
             for (int i=rr.length()-1;i>=0;i--)
             {
-                reverses+=rr.charAt(i);
+                reverses.append(rr.charAt(i));
             }
             reverse.append(reverses).append("%");
          }
