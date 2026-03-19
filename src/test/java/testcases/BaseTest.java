@@ -1,9 +1,6 @@
 package testcases;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
-import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -18,13 +15,10 @@ import pages.BasePage;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author Aravindanath
- * @Date 2022-10-09
- */
 public class BaseTest {
 
     public WebDriver driver = null;
@@ -34,24 +28,17 @@ public class BaseTest {
         String browser = System.getProperty("browser")!=null ? System.getProperty("browser") : BasePage.getvalue("browser");
 
         if (browser.contains("chrome")) {
-            ChromeOptions opt=new ChromeOptions();
-            WebDriverManager.chromedriver().setup();
-            if(browser.contains("headless"))
-            {
-                opt.addArguments("headless");
-            }
-            driver = new ChromeDriver(opt);
+           driver = new ChromeDriver();
         } else if (browser.contains("firefox")) {
-            WebDriverManager.firefoxdriver().setup();
+
             driver = new FirefoxDriver();
             Thread.sleep(300);
         }
         else if (browser.contains("InternetExplorerDriver")) {
-            WebDriverManager.iedriver().setup();
-            driver = new InternetExplorerDriver();
+              driver = new InternetExplorerDriver();
         }
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
+       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get(BasePage.getvalue("url"));
     }
 
