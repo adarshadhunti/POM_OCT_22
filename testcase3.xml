@@ -2,18 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="resources.Listeners"/>
+        <listener class-name="resources.ChainTestListeners"/>
+        <listener class-name="resources.IListeners"/>
     </listeners>
     <test verbose="2" preserve-order="true" name = "Parallel Tests">
-        <!--
-    parallel="classes">-->
+<!--    parallel="classes">-->
         <classes>
-            <class name="testcases.TC_HM_003"/>
-            <class name="testcases.TC_HM_003_parameterize"/>
-            <class name="testcases.TC_HM_003_parameterize_excel"/>
-            <class name="testcases.TC_HM_003_parameterize_excel_util"/>
-            <class name="testcases.TC_HM_003_parameterize_excel_util1"/>
-            <class name="testcases.dbconnector"/>
+            <class name="testcases.validationManagerModule"/>
         </classes>
     </test>
 </suite>
