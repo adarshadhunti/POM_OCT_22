@@ -10,11 +10,15 @@ import org.testng.ITestResult;
 import testcases.BaseTest;
 import java.io.IOException;
 
-public class Listeners extends BaseTest implements ITestListener {
+public class IListeners extends BaseTest implements ITestListener {
     public WebDriver driver = null;
     ExtentTest test;
     ExtentReports extent = ExtentReporterNG.getReportObject();
-    ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
+    private static final ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
+
+    public static Object getCurrentTest() {
+        return extentTest.get();
+    }
 
     public void onTestStart(ITestResult result) {
         test = extent.createTest(result.getMethod().getMethodName());
@@ -75,4 +79,3 @@ public class Listeners extends BaseTest implements ITestListener {
     }
 
 }
-
